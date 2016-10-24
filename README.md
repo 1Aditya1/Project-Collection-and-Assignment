@@ -1,6 +1,6 @@
 #Project Collection and Assignment
 
-This is a fork of "Project Collection and Assignment". Now [SunshineAggies] is working on this project.
+This is a fork of "Project Collection and Assignment". Now, the RubyThons are working on this project.
 
 ===================
 #### Update at 12/01/2015
