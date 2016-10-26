@@ -31,7 +31,7 @@ class ResetController < ApplicationController
     
     #reset the DBs
     Assignment.delete_all
-    User.where('name != ?', "Administrator").delete_all
+    User.where(admin:false).delete_all
     Preassignment.delete_all
     Preference.delete_all
     Project.delete_all

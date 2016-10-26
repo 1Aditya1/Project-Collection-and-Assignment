@@ -41,7 +41,8 @@ class TeamsController < ApplicationController
 		@user_names = Array.new
 
 		User.find_each do |user|
-			@user_names << user.name
+  
+			@user_names << user.name unless user.admin==true
 		end
 
   end
