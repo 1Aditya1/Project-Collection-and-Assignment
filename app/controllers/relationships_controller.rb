@@ -6,9 +6,8 @@ class RelationshipsController < ApplicationController
   end
 
   def create
-  	@team = Team.find_by(name: params[:relationship][:name])
+  	@team = Team.find_by(code: params[:relationship][:code])
   	if @team 
-  	  if @team.code == params[:relationship][:code]
         if Relationship.find_by(user_id: current_user.id, team_id: @team.id)
           flash[:warning] = "You are already a member"
           redirect_to @team
@@ -17,14 +16,11 @@ class RelationshipsController < ApplicationController
           flash[:success] = "Team joined successfully"
   	      redirect_to @team
         end
-  	  else
+  	else
   	  	flash.now[:danger] = "Code is wrong"
   	  	render 'new'
-  	  end
-  	else
-  	  flash.now[:danger] = "Team name not found"
-  	  render 'new'
-  	end
+  	 end
+  	
   end
 
   def destroy
