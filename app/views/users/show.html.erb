@@ -46,6 +46,14 @@
   	<td><%= @user.year %></td>
   </tr>
   <tr>
+  	<th>Team</th>
+  	<% if (@user.is_member_of).present? == false%>
+  	  <td>Currently not a member of any team</td>
+  	 <%else%>
+  	  <td><%= (@user.is_member_of).name %></td>
+  	 <% end %>
+  </tr>
+  <tr>
   	<th>Gravatar</th>
   	<td><%= gravatar_for @user %></td>
   </tr>
