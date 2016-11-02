@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124214616) do
+ActiveRecord::Schema.define(version: 20161102014423) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer  "team_id"
@@ -104,6 +104,8 @@ ActiveRecord::Schema.define(version: 20151124214616) do
     t.string   "remember_digest"
     t.boolean  "admin",           default: false
     t.text     "peer_evaluation"
+    t.string "year"
+    t.string   "semester"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

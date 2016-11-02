@@ -14,9 +14,14 @@
 
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      
+      <%= f.label :semester%>
+      <%= f.select :semester ,[['Fall', 'Fall'] ,['Spring' ,'Spring'] ,['Summer' ,'Summer']] %>
+      
+      <%= f.label :year %>
+      <%#= f.text_field :semester, class: 'form-control' %>
+      <%#= f.select_year :semester, start_year: 2000, end_year: 2010)%>   
+      <%= f.select :year, (2000..Time.now.year + 10).to_a, :include_blank => {:year => "Select year"} %>
       
       <div class="col-md-6 col-md-offset-3">
         <%= f.submit "Create my account", class: "btn btn-primary" %>

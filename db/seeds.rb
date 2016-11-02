@@ -4,6 +4,8 @@ user.name = 'administrator'
 user.email = "admin@example.com"
 user.password = 'adminadmin'
 user.admin = true
+user.semester = 'Fall'
+user.year =  2016.to_s
 user.save!
 
 # User.create!(name:  "administrator",
@@ -22,8 +24,12 @@ user.save!
    name  = Faker::Name.name
    email = "example-#{n+1}@railstutorial.org"
    password = "password"
+   semester = "Fall"
+   year = 2016.to_s
    User.create!(name:  name,
                  email: email,
+                 semester: semester,
+                 year: year,
                  password:              password,
                  password_confirmation: password)
  end
