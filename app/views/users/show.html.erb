@@ -2,8 +2,22 @@
 <h1>User Details</h1>
 <h2>  <% if current_user.admin? && !current_user?(@user) %>
 	<%= link_to "Edit", edit_user_path(@user) %>
-    | <%= link_to "Delete", @user, method: :delete,
-                                  data: { confirm: "You sure?" } %>
+    | <%= link_to "Delete", @user, method: :delete,     
+                                  data: { confirm: "Are you sure you want to delete " + @user.name } %>
+    | 
+    <% if !@user.admin?%>
+    <%= link_to "Make Admin",  user_make_admin_path(@user),
+                                  data: { confirm: "This will give the user unlimited power. Sure? " } %>
+    
+    <% else %>
+     <%= link_to "Remove Admin",  user_make_admin_path(@user),
+                                  data: { confirm: "Revoke all administrator rights?" } %>
+    
+
+    <% end %>
+
+
+
   <% end %>
 </h2>
 
@@ -13,6 +27,11 @@
   <tr>
   	<th>Name</th>
   	<td><%= @user.name %></td>
+  </tr>
+  <tr>
+    <tr>
+  	<th>Role</th>
+  	<td><%= @user.admin? ? 'Administrator' : 'Student'%></td>
   </tr>
   <tr>
   	<th>Email ID</th>

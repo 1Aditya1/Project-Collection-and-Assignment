@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   end
 
   def show
+		print("Params = " + params.to_s())
     @user = User.find(params[:id])
   end
   
@@ -177,6 +178,24 @@ class UsersController < ApplicationController
     end
   end
 
+	def make_admin
+		@user = User.find(params[:user_id])
+
+		if(!@user.admin)
+			@user.update_attribute(:admin, true)
+			flash[:success]  = @user.name  + " is now an Administrator!"
+		
+		else
+			@user.update_attribute(:admin, false)
+			flash[:success]  = "This administrator has been removed"
+		
+		end
+
+		
+		redirect_to @user
+	end
+
+
 	def update_project
 		@relationship = Relationship.find_by_user_id(params[:user_id])
 		@team = Team.find(@relationship.team_id)
@@ -210,7 +229,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:success] = "User Deleted Permanently!"
     redirect_to users_url
   end
 

@@ -33,7 +33,9 @@ Rails.application.routes.draw do
                 post :upload
                 get :download
                 get :admin_download
-				post :update_project
+		post :update_project
+                get :make_admin
+            
         end
 
         resources :teams

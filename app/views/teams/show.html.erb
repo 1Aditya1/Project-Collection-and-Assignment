@@ -7,7 +7,7 @@
                                 data: { confirm: "You sure?" } %>
 </h2>
 <% end %>
-<% if current_user.is_member?(@team) && !@team.is_leader?(current_user) %>
+<% if current_user.is_member?(@team) %><%# && !@team.is_leader?(current_user) %>
   <% r = Relationship.find_by(user_id: current_user.id, team_id: @team.id) %>
     <h2><%= link_to "Leave Team", r, method: :delete,
                                 data: { confirm: "You sure?" } %>
@@ -18,17 +18,17 @@
   <div class="col-md-4 col-md-offset-4">
 <table class="table">
   <tr>
-  	<th>Name</th>
+  	<th>Team Name</th>
   	<td><%= @team.name %></td>
   </tr>
 
   <tr>
-    <th>Created by</th>
+    <th>Team Leader</th>
     <td><%= @team.user.name %></td>
   </tr>
 
   <tr>
-    <th>Code</th>
+    <th>Team Code</th>
     <td><%= @team.code %></td>
   </tr>
 
