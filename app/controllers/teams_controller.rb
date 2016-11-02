@@ -73,7 +73,7 @@ class TeamsController < ApplicationController
   def create
     if current_user.teams.count != 0
       flash[:danger] = "You have already created one team"
-      redirect_to root_url
+      redirect_to teams_path
     elsif current_user.is_member_of.present?
       flash[:danger] = "You are already a member of a team"
       redirect_to root_url
