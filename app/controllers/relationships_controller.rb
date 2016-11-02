@@ -2,7 +2,12 @@ class RelationshipsController < ApplicationController
   before_action :logged_in_user
 
   def new
-  	@team = Team.new
+    if current_user.is_member_of.present?
+      flash[:danger] = "You are already a member of a team" 
+      redirect_to teams_path
+    else
+      @team = Team.new
+    end
   end
 
   def create
