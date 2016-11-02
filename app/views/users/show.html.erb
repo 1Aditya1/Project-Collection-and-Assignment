@@ -47,7 +47,7 @@
   </tr>
   <tr>
   	<th>Team</th>
-  	<% if (@user.is_member_of).present? == false%>
+  	<% if !(@user.is_member_of).present?%>
   	  <td>Currently not a member of any team</td>
   	 <%else%>
   	  <td><%= (@user.is_member_of).name %></td>
