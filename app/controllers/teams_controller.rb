@@ -18,7 +18,19 @@ class TeamsController < ApplicationController
 
   def index
     if current_user.admin?
+      @counts = []
+      @leaders = []
+      @status  = []
       @teams = Team.paginate(page: params[:page])
+      @teams.each do |team|
+        count = (Relationship.where(team_id:team.id).count)  
+        @counts << count
+        @leaders << team.leader
+        print(Assignment.where(:team_id => team.id).inspect)
+        @status << ((Assignment.where(:team_id => team.id).blank?) ? "No" : "Yes")
+  end
+  print(@status)
+
     else
       @team = current_user.is_member_of
       if @team 
@@ -42,7 +54,10 @@ class TeamsController < ApplicationController
 
 		User.find_each do |user|
   
-			@user_names << user.name unless user.admin==true
+      if user.admin==false and Relationship.find_by_user_id(user.id)==nil
+			  @user_names << user.name 
+      end
+      @user_names = @user_names.sort_by { |word| word.downcase }
 		end
 
   end

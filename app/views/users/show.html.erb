@@ -50,8 +50,10 @@
   	<% if !(@user.is_member_of).present?%>
   	  <td>Currently not a member of any team</td>
   	 <%else%>
-  	  <td><%= (@user.is_member_of).name %></td>
+  	  <td><%=link_to (@user.is_member_of).name ,team_path(@user.is_member_of)%></td>
   	 <% end %>
+
+
   </tr>
   <tr>
   	<th>Gravatar</th>

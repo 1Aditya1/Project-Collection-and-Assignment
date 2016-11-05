@@ -5,9 +5,17 @@
 <div class="col-md-6 col-md-offset-3">
 <%= will_paginate %>
 
-<ul class="users">
+<table class="users">
+<th>
+<td>Name</td>
+<td>Current Team</td>
+<td>Options</td>
+
+
+</th>
+
   <%= render @users %>
-</ul>
+</table>
 
 <%= will_paginate %>
 

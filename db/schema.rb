@@ -104,7 +104,7 @@ ActiveRecord::Schema.define(version: 20161102014423) do
     t.string   "remember_digest"
     t.boolean  "admin",           default: false
     t.text     "peer_evaluation"
-    t.string "year"
+    t.string   "year"
     t.string   "semester"
   end
 

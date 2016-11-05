@@ -7,7 +7,19 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: [:index, :destroy]
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.order("lower(name) ASC").all.paginate(page: params[:page])
+		
+		@teams = {}
+		@users.each do |user|
+			res = Relationship.find_by_user_id(user.id)
+			if res!=nil
+			print(res.inspect)
+				@teams[user.id] =  Team.find_by_id(res.team_id)
+			else
+				@teams[user.id]  = nil
+			end
+		end
+print(@teams)
   end
 
   def show

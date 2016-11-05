@@ -16,4 +16,6 @@ class Team < ActiveRecord::Base
   def is_leader?(user)
   	self.leader == user
   end
+
+ 
 end

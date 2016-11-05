@@ -1,14 +1,13 @@
-<li <%= "id=listitemproject_#{project.id}" %> >
-  <%= link_to project.title, project %>
+<tr> <%#= "id=listitemproject_#{project.id}" %> 
+  <td><%= link_to project.title, project %></td>
   <% if current_user.admin? %>
-      <% linkvalue = project.approved? ? "Unapprove" : "Approve" %>
-  	| <%= link_to linkvalue, "#", :onclick=>"$(\'#edit_project_#{project.id}\').submit()", :id => "toggle_switch_#{project.id}" %>
-    | <%= link_to "Edit", edit_project_path(project) %>
-    | <%= link_to "Delete", project, method: :delete,
-                                     data: { confirm: "You sure?" } %>
+      <td><% linkvalue = project.approved? ? "Unapprove" : "Approve" %><%= link_to linkvalue, "#", :onclick=>"$(\'#edit_project_#{project.id}\').submit()", :id => "toggle_switch_#{project.id}" %></td>
+    <td><%= link_to "Edit", edit_project_path(project) %></td>
+    <td> <%= link_to "Delete", project, method: :delete,
+                                     data: { confirm: "You sure?" } %></td>
     <%= form_for(project, url: toggle_project_path(project), remote: true) do |f| %>
       <%= hidden_field_tag :id, project.id %>
       <%= f.submit "Submit", :class => "hidden" %>
     <% end %>
   <% end %>
-</li>
+</tr>
