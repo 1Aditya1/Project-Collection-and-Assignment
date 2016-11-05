@@ -6,6 +6,7 @@ user.password = 'adminadmin'
 user.admin = true
 user.semester = 'Fall'
 user.year =  2016.to_s
+user.course = 'CSCE606'
 user.save!
 
 # User.create!(name:  "administrator",
@@ -26,10 +27,12 @@ user.save!
    password = "password"
    semester = "Fall"
    year = 2016.to_s
+   course = 'CSCE606'
    User.create!(name:  name,
                  email: email,
                  semester: semester,
                  year: year,
+                 course: course,
                  password:              password,
                  password_confirmation: password)
  end

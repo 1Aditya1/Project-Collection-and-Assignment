@@ -45,6 +45,10 @@
   	<th>Year</th>
   	<td><%= @user.year %></td>
   </tr>
+    <tr>
+  	<th>Course</th>
+  	<td><%= @user.course %></td>
+  </tr>
   <tr>
   	<th>Team</th>
   	<% if !(@user.is_member_of).present?%>

@@ -21,6 +21,9 @@
       <%= f.label :year %>
       <%= f.select :year, (2000..Time.now.year + 10).to_a, :include_blank => {:year => "Select year"} %>
       
+       <%= f.label :course%>
+      <%= f.select :course ,[['CSCE606', 'CSCE606'] ,['CSCE431' ,'CSCE431']] %>
+      
       <div class="col-md-6 col-md-offset-3">
         <%= f.submit "Create my account", class: "btn btn-primary" %>
       </div>

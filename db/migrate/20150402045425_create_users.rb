@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :year
       t.string :semester
+      t.string :course
 
       t.timestamps null: false
     end

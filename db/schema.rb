@@ -106,6 +106,7 @@ ActiveRecord::Schema.define(version: 20161102014423) do
     t.text     "peer_evaluation"
     t.string   "year"
     t.string   "semester"
+    t.string   "course"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6 }, allow_blank: true
   validates :semester,presence: true
   validates :year,presence: true
+  validates :course,presence: true
 
   # Returns the hash digest of the given string.
   def User.digest(string)
