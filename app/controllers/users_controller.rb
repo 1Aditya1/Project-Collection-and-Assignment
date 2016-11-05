@@ -7,8 +7,8 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: [:index, :destroy]
 
   def index
-    @users = User.order("lower(name) ASC").all.paginate(page: params[:page])
-		
+    #@users = User.order("lower(name) ASC").all.paginate(page: params[:page])
+	@users = User.order("lower(uin) ASC").all.paginate(page: params[:page])	
 		@teams = {}
 		@users.each do |user|
 			res = Relationship.find_by_user_id(user.id)
@@ -240,14 +240,14 @@ print(@teams)
 	end
 
   def destroy
-    User.find(params[:id]).destroy
+    User.find(params[:id]).destroy 
     flash[:success] = "User Deleted Permanently!"
     redirect_to users_url
   end
 
   private
     def user_params
-      params.require(:user).permit(:name, :email, :password,
+      params.require(:user).permit(:name,:uin, :email, :password,
                                    :password_confirmation, :semester,:year, :course)
     end
 end

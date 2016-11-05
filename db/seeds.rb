@@ -1,6 +1,7 @@
 # Create an admin account
 user = User.find_or_initialize_by(email: 'admin@example.com')
 user.name = 'administrator'
+user.uin = Faker::Number.number(9)
 user.email = "admin@example.com"
 user.password = 'adminadmin'
 user.admin = true
@@ -23,12 +24,14 @@ user.save!
 
  99.times do |n|
    name  = Faker::Name.name
+   uin   = Faker::Number.number(9)
    email = "example-#{n+1}@railstutorial.org"
    password = "password"
    semester = "Fall"
    year = 2016.to_s
    course = 'CSCE606'
    User.create!(name:  name,
+                 uin: uin,
                  email: email,
                  semester: semester,
                  year: year,
