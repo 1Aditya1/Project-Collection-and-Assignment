@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   
   serialize :peer_evaluation, Hash
 
-  attr_accessor :remember_token
+  attr_accessor :remember_token, :reset_token
   before_save { self.email = email.downcase }
   validates :name,  presence: true, length: { maximum: 50 }
   VALID_UIN_REGEX = /\d/
@@ -70,6 +70,25 @@ class User < ActiveRecord::Base
       Team.find_by(id: r.team_id)
     end
   end
+  
+   # Sets the password reset attributes.
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_attribute(:reset_digest,  User.digest(reset_token))
+    update_attribute(:reset_sent_at, Time.zone.now)
+  end
+
+  # Sends password reset email.
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+  
+    private
+
+    # Converts email to all lower-case.
+    def downcase_email
+      self.email = email.downcase
+    end
 
 end
   
