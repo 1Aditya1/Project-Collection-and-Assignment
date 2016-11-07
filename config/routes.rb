@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
         get 'sessions/new'
 
         get 'users/new'
@@ -21,6 +25,7 @@ Rails.application.routes.draw do
                         patch :toggle
                 end
         end
+        resources :password_resets,     only: [:new, :create, :edit, :update]
 
         get 'add_project'               => 'projects#new'
         get 'approved_projects'         => "projects#approved"
