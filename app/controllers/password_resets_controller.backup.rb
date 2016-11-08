@@ -27,13 +27,7 @@ class PasswordResetsController < ApplicationController
   def update
     if params[:user][:password].empty?                  # Case (3)
       @user.errors.add(:password, "can't be empty")
-      flash.now[:danger] = "Password can't be empty."
       render 'edit'
-    elsif params[:user][:password].length <6 
-      @user.errors.add(:password, "Can't be less than 6 characters.")
-      flash.now[:danger] = "Password can't be less than 6 characters."
-
-       render 'edit'
     elsif @user.update_attributes(user_params)          # Case (4)
      log_in @user
      flash[:success] = "Password has been reset."
