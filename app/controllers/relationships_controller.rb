@@ -1,7 +1,8 @@
 class RelationshipsController < ApplicationController
   before_action :logged_in_user
-
+  
   def new
+    @all_teams=Team.all
     if current_user.is_member_of.present?
       flash[:danger] = "You are already a member of a team" 
       redirect_to teams_path
