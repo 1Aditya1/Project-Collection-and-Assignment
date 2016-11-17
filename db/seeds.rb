@@ -79,7 +79,7 @@ user.save!
  20.times do |n|
    name = Faker::Internet.domain_word
    user_id = users[n].id
-   code = "abcd"
+   code = Faker::Number.number(4)
    t = Team.create!(name: name, user_id: user_id, code: code)
    Relationship.create!(user_id: user_id, team_id: t.id)
  end
