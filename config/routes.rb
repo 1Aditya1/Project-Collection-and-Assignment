@@ -24,7 +24,7 @@ Rails.application.routes.draw do
                         get :approve, :unapprove
                         patch :toggle
                 end
-                post :update_project
+                
                 get :legacy
                 post :legacy
         end
@@ -41,7 +41,7 @@ Rails.application.routes.draw do
                 post :upload
                 get :download
                 get :admin_download
-		
+		post :update_project
                 get :make_admin
                 
         end
