@@ -72,17 +72,30 @@ class TeamsController < ApplicationController
 	def add_user
 		usr = User.find_by_name(params[:user_name].to_s)
 		on_team = Relationship.find_by_user_id(usr.id)
+
+    print("\nHello\n")
+    print(params)
 		if on_team != nil
 			flash[:error] = "This user is already on a team"
 			redirect_to teams_path
-			return
-		end
+			
+
+    print(Relationship.where(team_id:params[:team_id]).count)
+    print("Freee")
+
+    elsif (Relationship.where(team_id:params[:team_id]).count) >= 6
+          flash[:danger]  = "Sorry, this team has already reached the capacity of 6 members. "
+          redirect_to teams_path
+    
+
+    else
 		relationship = Relationship.new
 		relationship.team_id = params[:team_id].to_s
 		relationship.user_id = User.find_by_name(params[:user_name].to_s).id
 		relationship.save
 		flash[:success] = "Successfully add user "+ params[:user_name].to_s+" to team"
 		redirect_to teams_path
+    end
 	end
   
   def create
