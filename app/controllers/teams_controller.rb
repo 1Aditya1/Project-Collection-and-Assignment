@@ -18,16 +18,17 @@ class TeamsController < ApplicationController
 
   def index
     if current_user.admin?
-      @counts = []
-      @leaders = []
-      @status  = []
+      @counts = Hash.new
+      @leaders = Hash.new
+      @status  = Hash.new
       @teams = Team.paginate(page: params[:page])
+
+      print(@teams.inspect)
       @teams.each do |team|
         count = (Relationship.where(team_id:team.id).count)  
-        @counts << count
-        @leaders << team.leader
-        print(Assignment.where(:team_id => team.id).inspect)
-        @status << ((Assignment.where(:team_id => team.id).blank?) ? "No" : "Yes")
+        @counts[team.id]  =  count
+        @leaders[team.id] = team.leader
+        @status[team.id] =  ((Assignment.where(:team_id => team.id).blank?) ? "No" : "Yes")
   end
   print(@status)
 
@@ -137,7 +138,7 @@ class TeamsController < ApplicationController
   def destroy
     Team.find(params[:id]).destroy
     flash[:success] = "Team deleted"
-    redirect_to root_url
+    redirect_to teams_path
   end
  
  private
