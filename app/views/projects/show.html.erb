@@ -38,7 +38,7 @@
   <% if current_user.admin? %>
   <tr>
     <th>Approved</th>
-    <td><%= @project.approved %></td>
+    <td><%= (@project.approved)?'Yes':'No' %></td>
   </tr>
   <% end %>
 </table>
