@@ -17,6 +17,8 @@ gem 'jquery-ui-rails'
 gem 'rb-readline'
 gem 'rubycas-client', :git => 'git://github.com/rubycas/rubycas-client.git'
 gem 'munkres', '~> 0.1.0'
+gem 'carrierwave', '~> 0.9'
+
 
 group :development, :test do
   gem 'quiet_assets'
