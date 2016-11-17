@@ -21,11 +21,11 @@
   </tr>
   <tr>
   	<th>On Campus</th>
-  	<td><%= @project.oncampus %></td>
+  	<td><%= @project.oncampus? ? 'Yes':'No' %></td>
   </tr>
   <tr>
   	<th>Is Legacy</th>
-  	<td><%= (@project.islegacy)?'Yes':'No' %> </td>
+  	<td><%= @project.islegacy? ? 'Yes':'No' %> <%= "Legacy Details"%> </td>
   </tr>
 	<tr>
   	<th>Team</th>

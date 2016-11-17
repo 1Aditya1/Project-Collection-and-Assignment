@@ -29,16 +29,16 @@
   </tr>
   <tr>
   	<th>On Campus</th>
-  	<td><%= (@project.oncampus)?'Yes':'No' %></td>
+  	<td><%= @project.oncampus? ? 'Yes':'No' %></td>
   </tr>
   <tr>
   	<th>Is Legacy</th>
-  	<td><%= ( @project.islegacy)?'Yes':'No' %></td>
+  	<td><%= @project.islegacy? ? 'Yes':'No' %></td>
   </tr>
   <% if current_user.admin? %>
   <tr>
     <th>Approved</th>
-    <td><%= (@project.approved)?'Yes':'No' %></td>
+    <td><%= @project.approved? ? 'Yes':'No' %></td>
   </tr>
   <% end %>
 </table>
