@@ -23,7 +23,11 @@ class RelationshipsController < ApplicationController
           flash[:warning] = "You are already a member"
           redirect_to @team
 
-        elsif Relationship.count(team_id:@team_id) >= 6
+        elsif Relationship.where(team_id:@team_id).count >= 6
+
+          print("\n\nHEllon\n")
+          print( Relationship.where(team_id:@team_id).count)
+          print("\n\nBYEn\n")
           flash[:danger]  = "Sorry, this team has already reached the capacity of 6 members. Try finding a new team . . . "
           render 'new'
 

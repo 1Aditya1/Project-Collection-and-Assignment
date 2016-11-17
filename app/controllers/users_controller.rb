@@ -47,26 +47,45 @@ print(@teams)
   end
 
 	def project
-		@user = User.find(params[:user_id])
 
+		@user = User.find(params[:user_id])
 		@own = Own.find_by_user_id(params[:user_id])
+
+
+
 		if !own?
+
 			if !have_permission? 
 				return 
 			end
 			@relationship = Relationship.find_by_user_id(params[:user_id])
+
 			if !have_team?
 				return
 			end
+
 			@team = Team.find(@relationship.team_id)
 			@assignment = Assignment.find_by_team_id(@team.id)
+		
 			if !have_project?
 				return
 			end
 			@project = Project.find(@assignment.project_id)
+
+
 		else
+
+		
+
 			@project = Project.find(@own.project_id)
+					
+
 			@assignment = Assignment.find_by_project_id(@project.id)
+
+			#print("Thi is an assignment")
+			#print(@assignment)
+			#print("\n\nBye\n\n")
+
 			if !have_project?
 				return
 			end
