@@ -8,7 +8,12 @@ class UsersController < ApplicationController
 
   def index
     #@users = User.order("lower(name) ASC").all.paginate(page: params[:page])
-	@users = User.order("lower(uin) ASC").all.paginate(page: params[:page])	
+	#@users = User.order("lower(uin) ASC").all.paginate(page: params[:page])
+	@sorting = params[:sort]
+	    User.order( @sorting ? @sorting : :id).each do |mv|
+            (@users ||= [ ]) << mv
+		end
+		@users = User.order(@sorting).all.paginate(page: params[:page])	
 		@teams = {}
 		@users.each do |user|
 			res = Relationship.find_by_user_id(user.id)
