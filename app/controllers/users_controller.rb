@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 		end
 		@users = User.order(@sorting).all.paginate(page: params[:page])	
 		@teams = {}
+		
 		@users.each do |user|
 			res = Relationship.find_by_user_id(user.id)
 			if res!=nil

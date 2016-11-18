@@ -38,6 +38,7 @@ Rails.application.routes.draw do
                 get :legacy
                 post :legacy
                 get :legacy_add
+                get :documentation
         end
         resources :password_resets,     only: [:new, :create, :edit, :update]
 
