@@ -306,8 +306,15 @@ class ProjectsController < ApplicationController
 
                # print(@document.inspect)
 
-               @options = [["Final Report","final_report"],["Final Poster","final_poster"], ["Github Link", "github_link"], ["Heroku App Link", "heroku_link"]]
-                
+               @options = [["Final Report","final_report"],["Final Poster","final_poster"], ["Github Link", "github_link"], ["Heroku App Link", "heroku_link"]]   
+        end
+
+
+        def documentation
+
+		@project = Project.find(params[:project_id])
+
+                @documents = Document.where(:project_id => params[:project_id], :is_legacy => false)
         end
 
         def approve

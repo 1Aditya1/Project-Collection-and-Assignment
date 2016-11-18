@@ -1,0 +1,52 @@
+<% provide(:title, 'Project Documentation') %>
+<h3>Documentation for <%= @project.title %></h3>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+
+
+<% if @documents.count > -1%>
+
+
+<table class="Documents">
+<tr>
+<th>Document Type</th>
+<th>Link</th>
+</tr>
+
+<tr>
+<td>Iteration 0 Report</td>
+<td><%= link_to "iter0.pdf"%>
+</tr>
+
+
+<tr>
+<td>Iteration 1 Report</td>
+<td><%= link_to "iter1.pdf"%>
+</tr>
+
+
+<tr>
+<td>Iteration 0 Report</td>
+<td><%= link_to "rubythons_iter2.pdf"%>
+</tr>
+
+
+<tr>
+<td>Github Link</td>
+<td><%= link_to "github.com/girishk14"%>
+</tr>
+</table>
+
+
+<%else%>
+<p>Documentation Unavailable this porject :( Maybe you should add some . . . )</p>
+<%end%>
+
+</br></br>
+
+<h3> <%= link_to "Add/Upload documentation for this project", project_legacy_add_path(@project) %> </h3>
+
+
+</div>
+</div>

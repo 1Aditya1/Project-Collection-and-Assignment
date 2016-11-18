@@ -8,7 +8,7 @@
 <% if @documents.count > 0%>
 
 
-<table class="legacy_records">
+<table class="legacy_records left">
 <tr>
 <th>Upload Date</th>
 <th>Author</th>
@@ -38,7 +38,7 @@
 <%end%>
 
 
-<%= link_to "Add Legacy Record for this project", project_legacy_add_path(@project) %>
+<h3><%= link_to "Add Legacy Record for this project", project_legacy_add_path(@project) %></h3>
 
 
 </div>

@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   has_many :relationships, dependent: :destroy
   has_many :memberof, through: :relationships, source: :team
 	has_many :owns, dependent: :destroy
-  
+  attr_accessor :team
+
   serialize :peer_evaluation, Hash
 
   attr_accessor :remember_token, :reset_token

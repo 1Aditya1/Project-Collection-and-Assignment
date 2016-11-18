@@ -52,3 +52,9 @@ p {
 		border: 1px solid #ccc; 
 		text-align: left; 
 	}
+
+
+	.left
+	{
+    align: left;
+	}
