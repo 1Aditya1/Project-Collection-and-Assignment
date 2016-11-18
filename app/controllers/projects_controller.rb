@@ -274,10 +274,41 @@ class ProjectsController < ApplicationController
                 redirect_to projects_url
         end
         def legacy
-		@project = Project.find_by(id: params[:id])
-	
-		flash[:success] = "Successfully updated"
+		@project = Project.find(params[:project_id])
+
+
+                @documents = Document.where(:project_id => params[:project_id], :is_legacy => true)
+
+                @legacy_records = Hash.new
+
+                @documents.each do |doc|
+
+                        if !@legacy_records.key?(doc.author)
+                                @legacy_records[doc.author] = Hash.new
+                        end
+                        
+                        @legacy_records[doc.author]["date"] = doc.created_at
+                        @legacy_records[doc.author][doc.doc_type] = (doc.is_file==false) ? doc.link : {:identifier => doc.filein_identifier, :path => doc.filein.url}
+                end
+
+                print(@legacy_records)
 	end
+
+        def legacy_add
+	        @project = Project.find(params[:project_id])
+
+                @document = Document.new
+                #@options = [["iter0","Iteration 0 Report"],["iter1","Iteration 1 Report"],["iter1","Iteration1 Report"],["iter2","Iteration 2 Report"],["iter3","Iteration 3 Report"],["iter4","Iteration 4 Report"],["finalreport","Final Report"],["final_poster","Iteration1 Report"]]
+                 # print("\n\nHello\n\n")
+                #print(params)
+
+                #print(params)
+
+               # print(@document.inspect)
+
+               @options = [["Final Report","final_report"],["Final Poster","final_poster"], ["Github Link", "github_link"], ["Heroku App Link", "heroku_link"]]
+                
+        end
 
         def approve
                 project = Project.find_by(id: params[:id])

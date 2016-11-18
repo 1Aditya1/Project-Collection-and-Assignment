@@ -1,1 +1,45 @@
-<h1> Legacy Project Details</h1>
+<% provide(:title, 'Legacy Project Information') %>
+<h3>Legacy Records for <%= @project.title %></h3>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+
+
+<% if @documents.count > 0%>
+
+
+<table class="legacy_records">
+<tr>
+<th>Upload Date</th>
+<th>Author</th>
+<th>Github</th>
+<th>Heroku</th>
+<th>Final Report </td>
+<th>Final Poster </td>
+</tr>
+
+
+<% @legacy_records.each do |key, val|%>
+<tr>
+<td><%= val["date"]%></td>
+<td><%= key %></td>
+<td><%= link_to val["github_link"],"http://#{val["github_link"]}"%></td>
+<td><%= link_to  val["github_link"],"http://#{val["heroku_link"]}"%></td>
+<td><%= link_to val["final_report"][:identifier], val["final_report"][:path]%></td>
+<td><%= link_to val["final_poster"][:identifier], val["final_poster"][:path]%></td>
+</tr>
+<%end %>
+
+</table>
+
+
+<%else%>
+<p>There are no legacy records :( Maybe you should add some . . . )</p>
+<%end%>
+
+
+<%= link_to "Add Legacy Record for this project", project_legacy_add_path(@project) %>
+
+
+</div>
+</div>

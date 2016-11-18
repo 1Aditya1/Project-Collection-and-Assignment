@@ -39,7 +39,7 @@
 					end
 		%></td>
   </tr>
-
+<% if false %>
 <%= form_tag({action: :update_project}) do %>
 	<tr>
 	<th> Iteration0 </th>
@@ -219,7 +219,7 @@
   </tr>
   <% end %>
 <% end %>
-</table>
+
 	<%=	submit_tag("Update") %>
 <% end %>
 <% if false %>
@@ -227,5 +227,8 @@
 			<%= link_to "Download batch", user_admin_download_path %>
 		<% end %>
 <% end %>
+
+<% end %>
+</table>
 </div>
 </div>

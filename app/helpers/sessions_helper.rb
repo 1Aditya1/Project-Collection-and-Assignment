@@ -125,7 +125,7 @@ module SessionsHelper
                 def have_project?
 
                         if @assignment == nil
-                                flash[:warning] = "Project has not been assigned. Hahha"
+                                flash[:warning] = "Project has not been assigned"
                                 redirect_to current_user
                                 return false
                         else

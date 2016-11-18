@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161107194922) do
+ActiveRecord::Schema.define(version: 20161118052759) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer  "team_id"
@@ -22,6 +22,20 @@ ActiveRecord::Schema.define(version: 20161107194922) do
 
   add_index "assignments", ["project_id"], name: "index_assignments_on_project_id"
   add_index "assignments", ["team_id"], name: "index_assignments_on_team_id"
+
+  create_table "documents", force: :cascade do |t|
+    t.boolean  "is_legacy"
+    t.boolean  "is_file"
+    t.string   "name"
+    t.string   "doc_type"
+    t.integer  "project_id"
+    t.datetime "date"
+    t.string   "author"
+    t.string   "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "filein"
+  end
 
   create_table "owns", force: :cascade do |t|
     t.integer "user_id"
@@ -61,16 +75,6 @@ ActiveRecord::Schema.define(version: 20161107194922) do
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
     t.boolean  "approved",     default: false
-    t.string   "iteration0"
-    t.string   "iteration1"
-    t.string   "iteration2"
-    t.string   "iteration3"
-    t.string   "iteration4"
-    t.string   "first_video"
-    t.string   "final_video"
-    t.string   "final_report"
-    t.string   "poster"
-    t.string   "source_code"
   end
 
   create_table "relationships", force: :cascade do |t|

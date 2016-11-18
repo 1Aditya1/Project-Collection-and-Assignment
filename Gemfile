@@ -17,7 +17,7 @@ gem 'jquery-ui-rails'
 gem 'rb-readline'
 gem 'rubycas-client', :git => 'git://github.com/rubycas/rubycas-client.git'
 gem 'munkres', '~> 0.1.0'
-gem 'carrierwave', '~> 0.9'
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 
 
 group :development, :test do

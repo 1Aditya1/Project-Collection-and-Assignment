@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'documents/index'
+
+  get 'documents/new'
+
+  get 'documents/create'
+
+  get 'documents/destroy'
+
   get 'password_resets/new'
 
   get 'password_resets/edit'
@@ -19,6 +27,8 @@ Rails.application.routes.draw do
         get    'resetDB' => 'reset#downloadAndReset'
         resources :users
         resources :projects
+        resources :documents
+        
         resources :projects do
                 member do
                         get :approve, :unapprove
@@ -27,6 +37,7 @@ Rails.application.routes.draw do
                 
                 get :legacy
                 post :legacy
+                get :legacy_add
         end
         resources :password_resets,     only: [:new, :create, :edit, :update]
 
