@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe PreferencesController, :type => :controller do
   before(:each) do
-    user = User.create(name: "David", email: "david@xyz.com", password: "1234567")
+    @user = User.create!(name: "David", email: "david@xyz.com", password: "1234567", uin: "456728360" , semester: "Fall" , year: "2016", course: "csce606" )
     sign_in :user
     @pro = Project.create!(title: "project1", organization: "org1", contact: "xyz", description: "abc")
   end
