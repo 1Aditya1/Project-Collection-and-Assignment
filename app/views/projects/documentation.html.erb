@@ -1,52 +1,61 @@
 <% provide(:title, 'Project Documentation') %>
 <h3>Documentation for <%= @project.title %></h3>
+<br><br>
 
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
 
 
-<% if @documents.count > -1%>
+<% if @documents.count > 0 %>
 
 
-<table class="Documents">
+<table class="document_records left">
 <tr>
-<th>Document Type</th>
-<th>Link</th>
-</tr>
+<th>Upload Date</th>
+<th>Description</th>
+<th>Document/Link</th>
+<th>Author</th>
 
-<tr>
-<td>Iteration 0 Report</td>
-<td><%= link_to "iter0.pdf"%>
-</tr>
-
-
-<tr>
-<td>Iteration 1 Report</td>
-<td><%= link_to "iter1.pdf"%>
+<% if @auth %>
+<th>Delete</th>
+<% end %>
 </tr>
 
 
+<% @documents.zip(@users).each do |doc, auser|%>
 <tr>
-<td>Iteration 0 Report</td>
-<td><%= link_to "rubythons_iter2.pdf"%>
+<td><%= doc.created_at %></td>
+<td><%= doc.name %></td>
+
+<% if doc.is_file%>
+<td><%= link_to doc.filein_identifier ,doc.filein.url%></td>
+<% else %>
+<td><%=link_to doc.link, "http://#{doc.link}"  %>
+<% end %>
+
+<td><%= link_to auser[1], user_path(auser[0])  %></td>
+
+<% if @auth %>
+<td><%= link_to "Delete", documents_destroy_path(:id => doc.id, :project_id => doc.project_id)%>
+<% end %>
 </tr>
+<%end %>
 
 
-<tr>
-<td>Github Link</td>
-<td><%= link_to "github.com/girishk14"%>
-</tr>
+
 </table>
 
 
+
 <%else%>
-<p>Documentation Unavailable this porject :( Maybe you should add some . . . )</p>
+<p>Documentation Unavailable this project :( If this is your project, maybe you should add some!)</p>
 <%end%>
 
 </br></br>
 
-<h3> <%= link_to "Add/Upload documentation for this project", project_legacy_add_path(@project) %> </h3>
-
+<% if @auth %>
+<h3> <%= link_to "Add/Upload documentation for this project", new_document_path(:project_id => @project.id) %> </h3>
+<% end %>
 
 </div>
 </div>

@@ -15,7 +15,13 @@
   	<th>Title</th>
   	<td><%= @project.title %></td>
   </tr>
+    <tr>
+  	<th>Semester</th>
+  	<td>None</td>
+  </tr>
+
   <tr>
+  
   	<th>Organization</th>
   	<td><%= @project.organization %></td>
   </tr>
@@ -31,9 +37,41 @@
   	<th>On Campus</th>
   	<td><%= @project.oncampus? ? 'Yes':'No' %></td>
   </tr>
+
   <tr>
   	<th>Is Legacy</th>
-  	<td><%= @project.islegacy? ? 'Yes':'No' %></td>
+  	<td><%= @project.islegacy? ? 'Yes':'No' %> <%#= link_to "(Legacy Details)",project_legacy_path(@project)%> </td>
+  </tr>
+
+	<tr>
+  	<th>Team</th>
+  	<td><%=link_to @team.name, team_path(@team) %></td>
+  </tr>
+	<tr>
+  	<th>Members</th>
+  	<td>
+    <ol>
+
+    <% if current_user.admin? %>
+    <% @members.zip(@member_ids).each do |value,id| %>
+    <li><%= link_to value, user_path(id) %></li>
+    <% end %>
+
+    <% else %>
+    <% @members.zip(@member_ids).each do |value,id| %>
+    <li><%= value %></li>
+    <% end %>
+
+    <% end %>
+
+    	<tr>
+  <th>Project Documentation</th>
+  	<td><%=link_to "View", project_documentation_path(@project) %></td>
+  </tr>
+
+    </ol>
+    
+    </td>
   </tr>
   <% if current_user.admin? %>
   <tr>

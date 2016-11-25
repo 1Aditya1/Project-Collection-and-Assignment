@@ -231,6 +231,18 @@ class ProjectsController < ApplicationController
 
         def show
                 @project = Project.find(params[:id])
+                @team = Team.find(Assignment.find_by_project_id(@project.id).team_id)
+
+                print(@team)
+	
+
+	     	@member_ids = Relationship.where(team_id: @team.id).all
+		@members = Array.new
+		@member_ids.each do |member| #TO aggregate the members of each team. But isn't an array clumsy?
+			tmp = User.find(member.user_id.to_i)
+		@members << tmp.name.to_s
+                end
+
                 if !current_user.admin? && !@project.approved?
                         flash[:danger] = "You do not have priviledge to view this project"
                         redirect_to approved_projects_url
@@ -273,48 +285,24 @@ class ProjectsController < ApplicationController
                 flash[:success] = "Project deleted"
                 redirect_to projects_url
         end
-        def legacy
-		@project = Project.find(params[:project_id])
 
 
-                @documents = Document.where(:project_id => params[:project_id], :is_legacy => true)
 
-                @legacy_records = Hash.new
-
-                @documents.each do |doc|
-
-                        if !@legacy_records.key?(doc.author)
-                                @legacy_records[doc.author] = Hash.new
-                        end
-                        
-                        @legacy_records[doc.author]["date"] = doc.created_at
-                        @legacy_records[doc.author][doc.doc_type] = (doc.is_file==false) ? doc.link : {:identifier => doc.filein_identifier, :path => doc.filein.url}
-                end
-
-                print(@legacy_records)
-	end
-
-        def legacy_add
-	        @project = Project.find(params[:project_id])
-
-                @document = Document.new
-                #@options = [["iter0","Iteration 0 Report"],["iter1","Iteration 1 Report"],["iter1","Iteration1 Report"],["iter2","Iteration 2 Report"],["iter3","Iteration 3 Report"],["iter4","Iteration 4 Report"],["finalreport","Final Report"],["final_poster","Iteration1 Report"]]
-                 # print("\n\nHello\n\n")
-                #print(params)
-
-                #print(params)
-
-               # print(@document.inspect)
-
-               @options = [["Final Report","final_report"],["Final Poster","final_poster"], ["Github Link", "github_link"], ["Heroku App Link", "heroku_link"]]   
-        end
 
 
         def documentation
-
 		@project = Project.find(params[:project_id])
+                @documents = Document.where(:project_id => params[:project_id])
+                @users = []
+                @documents.each do |x|
+                auser = User.find(x.author);
+                @users<<([auser.id, auser.name])
+                end
+                
 
-                @documents = Document.where(:project_id => params[:project_id], :is_legacy => false)
+                @team = Team.find(Assignment.find_by_project_id(@project.id).team_id)
+	     	@member_ids = Relationship.where(team_id: @team.id, user_id: current_user).all
+                @auth = (@member_ids.empty?)?false:true
         end
 
         def approve

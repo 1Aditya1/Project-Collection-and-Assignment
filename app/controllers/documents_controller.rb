@@ -3,16 +3,37 @@ class DocumentsController < ApplicationController
   end
 
   def new
+        print("\n\nHello\n")
+        print(params)
+
+        print("\nBye\n\n")
+  	        @project = Project.find(params[:project_id])
+            @document = Document.new
+            @options = [["Link", "link"], ["File Upload", "file"]]
   end
 
   def create
-    print("\n\n\n Helloo")
-    print(params)
-    print("Byeee \n\n\n")
+
+  d = Document.new
+  d.author =  current_user.id;
+  d.project_id = params[:curr_project]
+  d.name =  params[:document][:name]
+  d.is_file = (params[:document][:doc_type] == "link") ? false : true
+
+  if(d.is_file)
+    d.filein = params[:document][:filein]
+  else
+    d.link = params[:document][:link]
+  end
+
+  d.save!
+  @p = Project.find(params[:curr_project])
+  flash[:success] = "Documentation Added"
+  redirect_to project_documentation_path(@p)
 
     #Write code to save into db here
     # create_table "documents", force: :cascade do |t|
-    #  t.boolean  "is_legacy"
+    # t.boolean  "is_legacy"
     # t.boolean  "is_file"
     #t.string   "name"
     #t.string   "doc_type"
@@ -21,46 +42,13 @@ class DocumentsController < ApplicationController
     #t.string   "author"
     #t.string   "link"
     #t.string   "filein"
-  file_stats = [false, false, true, true]
-  param_names = [:link1, :link2, :filein1, :filein2]
-  doc_types = [:github_link, :heroku_link, :final_report, :final_poster]
   
-  (0..3).each do |i|
-
-  d = Document.new
-  d.is_legacy = true
-  d.is_file = file_stats[i]
-  d.author =  params[:document][:author]
-  d.project_id = params[:curr_project]
-  d.doc_type = doc_types[i]
-
-  if(param_names[i].to_s.include?("link"))  
-  d.link = params[:document][param_names[i]]
-
-  else
-  d.filein = params[:document][param_names[i]]
-  end
-  d.save!
-  end #end do
-
- # d2.link = params[:document][:link2]
- # d3.filein = params[:document][:file1]
- # d4.filein = params[:document][:file2]
-
-
-  #print(u.filein.url )# => '/url/to/file.png'
-  #print(u.filein.current_path) # => 'path/to/file.png'
-  #print(u.filein_identifier) # => 'file.png'
-
-    @p = Project.find(params[:curr_project])
-
-
-    flash[:success] = "Legacy Record Added"
-    redirect_to project_legacy_path(@p)
-
-
   end
 
   def destroy
+    print(params)
+    Document.find(params[:id]).destroy
+    flash[:success] = "Document deleted"
+    redirect_to project_documentation_path(params[:project_id])
   end
 end
