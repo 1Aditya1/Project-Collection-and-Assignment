@@ -26,17 +26,19 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+
 end
 
 group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', :require=> false
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
-  gem 'rspec-rails'
   gem 'simplecov', :require => false, :group => :test
-  gem 'shoulda-matchers',:require => false
+
 end
 
 group :production do

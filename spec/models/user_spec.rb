@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe User, :type => :model do
   it "should create a new instance of a user given valid attributes" do

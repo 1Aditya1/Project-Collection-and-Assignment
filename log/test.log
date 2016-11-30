@@ -8658,3 +8658,1933 @@ Processing by UsersController#new as HTML
   Rendered layouts/_footer.html.erb (0.3ms)
 Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
   [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 19:41:20 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 6448ms (Views: 6447.7ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 19:41:26 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 647ms (Views: 33.6ms | ActiveRecord: 1.5ms)
+Started GET "/login" for 127.0.0.1 at 2016-11-30 19:41:27 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 19:41:27 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 19:41:27 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "@tamu.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered static_pages/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 5.4ms | ActiveRecord: 0.8ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 19:41:27 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 15ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 19:41:27 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 19:41:27 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 19:41:27 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:02', '2016-11-30 19:51:02', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:03', '2016-11-30 19:51:03', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "preassignments"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+SQLite3::SQLException: table preassignments has no column named name: INSERT INTO "preassignments" ("team_id", "project_id", "name", "created_at", "updated_at", "id") VALUES (1, 1, 'MyString', '2016-11-30 19:51:04', '2016-11-30 19:51:04', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:00:34 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 527ms (Views: 526.3ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 20:00:35 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (34.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 802ms (Views: 41.9ms | ActiveRecord: 3.3ms)
+Started GET "/login" for 127.0.0.1 at 2016-11-30 20:00:36 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:00:36 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 20:00:36 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "@tamu.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered static_pages/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 20:00:36 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 23ms (Views: 9.6ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:00:36 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 20:00:36 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 20:00:36 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 631ms (Views: 630.3ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 20:21:58 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (60.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1078ms (Views: 73.7ms | ActiveRecord: 3.2ms)
+Started GET "/login" for 127.0.0.1 at 2016-11-30 20:22:00 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:22:00 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 20:22:00 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "@tamu.edu"]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered static_pages/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 12.9ms | ActiveRecord: 1.2ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 20:22:00 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 9.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 20:22:00 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 20:22:00 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 20:22:00 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 24.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$Wc8bQg1P9r8jdOBptVtXdeVIE5HWcOHKy7qDbnoqmtzfqdqfAhh4W"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 20:47:27.808339"], ["updated_at", "2016-11-30 20:47:27.808339"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$CM3pS7P3.qj4boC6h/Zr9eErcI4MI.j5EtM/jopwwf9io0ewKCkou"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 20:49:17.105535"], ["updated_at", "2016-11-30 20:49:17.105535"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$SX/hiUiH17dHgGghuR6zxe1o1gX0MSH5Mr8KF2ADRmvsvTDQ.lTyK"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 20:49:17.170372"], ["updated_at", "2016-11-30 20:49:17.170372"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$Iihu2OIsd0YpQbuP9O/t..4TI6QdED6jf4kWTyizoFtEU6NmBipvO"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 20:50:41.144090"], ["updated_at", "2016-11-30 20:50:41.144090"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 29.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$ts0kePCzArYnRb4yXnsUMeLtPkb5lGkxfOVFUWjzLWtErSGbo3O9K"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 20:50:41.246460"], ["updated_at", "2016-11-30 20:50:41.246460"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$kT/xI/RnosOYsewmY4rZw..O/eTkQwYncDUnSblppdIfMAQFnD6ym"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 20:53:36.720798"], ["updated_at", "2016-11-30 20:53:36.720798"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$pHauAV48KXhzQc6yBkbI3u1hiKZBsv6KV7W6fwHM1aYWn7dexyeqi"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 20:53:36.789450"], ["updated_at", "2016-11-30 20:53:36.789450"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$ZC50ntPKvaaNRFRFQIou9etPiZq.Me90Lo/dOKJ2BkFps1N/eLBua"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:00:54.734395"], ["updated_at", "2016-11-30 21:00:54.734395"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 24.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$db0RhmAhQLi3aD1AuiWDGeCC9lAOmdph6RvcGtRuj7TBhr9ldjr0S"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:00:54.804585"], ["updated_at", "2016-11-30 21:00:54.804585"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$DLexkoCSUUW/uqo433vuxOnWmTtlrj02hNyFSv9BD20t5hOS6pekK"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:01:45.063135"], ["updated_at", "2016-11-30 21:01:45.063135"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$zNNyOJ3NPt.627yOZGvUB.uuSAjR1SHCDZntBbMJItxgTATy9nFVK"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:01:45.151040"], ["updated_at", "2016-11-30 21:01:45.151040"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$tLAYsbDuvYyMb.xp7m3EO./yHbwAYOKnirGXTfNsLRSw6U0X96MlK"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:02:22.344936"], ["updated_at", "2016-11-30 21:02:22.344936"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$Grrcx3jmM70CvL7mIJTYw.AfTAI4.J58kUnei8/UciPqTiTl0DH8O"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:02:22.416596"], ["updated_at", "2016-11-30 21:02:22.416596"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$NH.g/dW/VXAIpCvdYr1WN.ZFeY56uc5SjO.bkND6D8cAyYxn6fMqq"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:04:57.320031"], ["updated_at", "2016-11-30 21:04:57.320031"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 28.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$KmzLvz9JJMaOVo./vkscLOYyO3FlVaLCHrQiwd60Tnfjsa5Rgg.cS"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:04:57.423754"], ["updated_at", "2016-11-30 21:04:57.423754"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$UgR2Qk5Rus7YdWQV1TepReNnuqczkNJOcQXGRJyGN7CYje6odHjFa"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:05:26.553491"], ["updated_at", "2016-11-30 21:05:26.553491"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$Y01kRSfD0Ze89tMNayGvQuPgWo2cciabeAzUcJPMQcpL2bcJlB7Xy"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:05:26.616744"], ["updated_at", "2016-11-30 21:05:26.616744"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$SoFNj/AOJLgK74rKswGmTeGK6NeXzLgsw0Sc4XmFug4Bbbnz3Qy/e"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:15:21.113762"], ["updated_at", "2016-11-30 21:15:21.113762"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$EiNNBjInOko2.HxAchWezObPFoBSjCr4mWK2Kv4tAsu/dqPdu4s4O"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:15:21.194302"], ["updated_at", "2016-11-30 21:15:21.194302"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$XOSQNE7NGQUgSJiLMcahJO/1UalyAkvIgUZgg4u6AeQcS/K99ummi"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:17:50.091448"], ["updated_at", "2016-11-30 21:17:50.091448"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$vMnQlj2Qfq9kvDw5TANmquBCPcMJeyhS4zjqOzpo2W8RY94LaW/uG"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:17:50.179593"], ["updated_at", "2016-11-30 21:17:50.179593"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$MJpezK/EtYyAZlyZbMvZ/.FFRZMliZWAIKnxwqsRxKRcHqa0Qcz/e"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:17:50.234238"], ["updated_at", "2016-11-30 21:17:50.234238"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$tDSyB.XlKhcN/mrWklFGMO6xV2KX05IzHwv/pVb27jODrofiiWKyW"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:17:50.248443"], ["updated_at", "2016-11-30 21:17:50.248443"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$rimxGmIRve2QaJD3JI/jD.roGkP9w7uwMEI60lZ6tzqwtipmmCZHG"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:18:47.674498"], ["updated_at", "2016-11-30 21:18:47.674498"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$eT3Bvt5rETqaOQlFC1iFjuTYS5LEJZKhqKwPGhPZyNq8RUbC4tUtO"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:18:47.754256"], ["updated_at", "2016-11-30 21:18:47.754256"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:18:47.795146"], ["updated_at", "2016-11-30 21:18:47.795146"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:18:47.800252"], ["updated_at", "2016-11-30 21:18:47.800252"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$W/aEVcK3GZEHq1G5/xqB8eedjr7uu8O/boKWSf9Ic6Y4KA/..p9Ku"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:18:47.816229"], ["updated_at", "2016-11-30 21:18:47.816229"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$G0zfuyPyZyJ1IFNmwFm4HO4dgrJt6OdpODnv58j3aJOVg.Ss/U3WW"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:18:47.830754"], ["updated_at", "2016-11-30 21:18:47.830754"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$6V7dTvG/txmSkihrusx7HuGFdeMmm5O2y5RUVF7Ml5QcOhsRvHWWm"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:35:53.726352"], ["updated_at", "2016-11-30 21:35:53.726352"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 28.0ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$S/5SbKhgx1wL4RIi0TCoQORkBNI1qtBju.R9OeqxOBGIbrR0sRVkK"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:35:53.802899"], ["updated_at", "2016-11-30 21:35:53.802899"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:35:53.850464"], ["updated_at", "2016-11-30 21:35:53.850464"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:35:53.856661"], ["updated_at", "2016-11-30 21:35:53.856661"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$krDglXL42jsI9VNB5CPzFu7mqg0nnKeHM4zj8SkjjohcuNMyiKJMm"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:35:53.880950"], ["updated_at", "2016-11-30 21:35:53.880950"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$tLrRIeIpkNKLI73VmSc/Zup1RlMGI6YzAdU9GhpWQ3vreuhGjU57a"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:35:53.897369"], ["updated_at", "2016-11-30 21:35:53.897369"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$vQ62Ft5SMwacbSLKhYTxPe/3Q65bzw..zNv8JApKMiSBvXr//nQH2"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:39:05.553941"], ["updated_at", "2016-11-30 21:39:05.553941"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 33.5ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$X9YtQzPq3AvNbvGTUOA57e1MxAtdkquIO.J9vOSTVDW4P8ueYVPr2"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:39:05.643632"], ["updated_at", "2016-11-30 21:39:05.643632"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:39:05.690337"], ["updated_at", "2016-11-30 21:39:05.690337"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:39:05.695837"], ["updated_at", "2016-11-30 21:39:05.695837"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$6cNot.FPa5elRwMy28BT/u.PTuOSWEdpycH5gNii8cLirf5g7Ce1y"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:39:05.719940"], ["updated_at", "2016-11-30 21:39:05.719940"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$hl.w5wffCVFHrq9h5BfksuCN/Ihe9H423CB5YXSS58u/XM5X/IXva"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:39:05.737886"], ["updated_at", "2016-11-30 21:39:05.737886"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$CLCVdirMHXUJFQXl/mvAkOD2yleahgx6IK0QBRxlw2lQenb6BkX5y"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:08.122086"], ["updated_at", "2016-11-30 21:42:08.122086"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 53.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (4.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$jfv35S.0LT5//Xvr9t0OL.DdDW.wQJh5x2cYO6L6Gap3F3UvQDJX."], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:08.263572"], ["updated_at", "2016-11-30 21:42:08.263572"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:42:08.919309"], ["updated_at", "2016-11-30 21:42:08.919309"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:42:08.925582"], ["updated_at", "2016-11-30 21:42:08.925582"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$DmCBHU/4KCPGc6bq4wZiV.EGdrSLih0GbU4SiMwxia4ei9MYHpIUm"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:08.954610"], ["updated_at", "2016-11-30 21:42:08.954610"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$E/Tm2RTCm6TmbG70vQIPlOO8wp1H.1FdEPPOcKxxFklvJ7uhbuVC6"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:08.967830"], ["updated_at", "2016-11-30 21:42:08.967830"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$UBsH4CkT1KSAnXRLWQhTPuPymc1bDI9g/t38zUtO/Ahgh6ywQLWlC"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:57.645918"], ["updated_at", "2016-11-30 21:42:57.645918"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:42:57.668445"], ["updated_at", "2016-11-30 21:42:57.668445"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (3.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$FZLrVlb9C8vFm4/5PbJME.5cXnfWKkUkbizet5Ll7wznIZ8SsrnvG"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:58.465693"], ["updated_at", "2016-11-30 21:42:58.465693"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:42:58.510141"], ["updated_at", "2016-11-30 21:42:58.510141"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:42:58.513899"], ["updated_at", "2016-11-30 21:42:58.513899"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$lUWEedO4HeA6oBCCTv2rfegHSQpqWq90dXGRqo/jbHi.qA/acCb0."], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:58.538233"], ["updated_at", "2016-11-30 21:42:58.538233"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$XHbUFPySxdTfca0yBFZ0GuNedhyWi5gqdn877nWr.DhIrBB..YfYu"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:42:58.553748"], ["updated_at", "2016-11-30 21:42:58.553748"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$pI54OaUTJ2EeQ6AxAXtFcuaE7bvGoPujxTjbGH8qnEDddCcGn53om"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:49:49.923027"], ["updated_at", "2016-11-30 21:49:49.923027"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:49:49.938475"], ["updated_at", "2016-11-30 21:49:49.938475"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$cqugrdQUQhQRovh.6v8DK.E06deRvfn/UynD8pHN9N1r81mvqnc7S"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:49:50.525699"], ["updated_at", "2016-11-30 21:49:50.525699"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:49:50.576670"], ["updated_at", "2016-11-30 21:49:50.576670"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:49:50.580923"], ["updated_at", "2016-11-30 21:49:50.580923"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$EHLzw4Hsig6VQq1BmU5NSefP0Tb4AC2XAk2QiTxIzTlOF60vrsMHe"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:49:50.602694"], ["updated_at", "2016-11-30 21:49:50.602694"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$NUdFJhzabuRtR..EpciUbOHFH0KhrYxiN2u0L4Yj90WV1LL3OBo5G"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:49:50.618100"], ["updated_at", "2016-11-30 21:49:50.618100"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$0Pdb0iCL2pTqHyrBSE8bD.XHmCiqDgrR0avKNISCXgS/yKLC9Ytj2"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:53:38.994009"], ["updated_at", "2016-11-30 21:53:38.994009"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:53:39.021475"], ["updated_at", "2016-11-30 21:53:39.021475"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$X0OLQTossIM79YGvu.O/NeVuqRZUyCZDC7Ki.y/MXAR67sFnz00pe"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:53:39.842323"], ["updated_at", "2016-11-30 21:53:39.842323"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:53:39.916311"], ["updated_at", "2016-11-30 21:53:39.916311"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:53:39.920760"], ["updated_at", "2016-11-30 21:53:39.920760"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.2ms)[0m  SELECT  1 AS one FROM "teams" WHERE "teams"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT  "teams".* FROM "teams"  ORDER BY "teams"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "teams" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-11-30 21:53:39.959451"], ["updated_at", "2016-11-30 21:53:39.959451"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "teams" SET "name" = ?, "updated_at" = ? WHERE "teams"."id" = ?  [["name", "an arbitrary value"], ["updated_at", "2016-11-30 21:53:39.964076"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mTeam Exists (0.3ms)[0m  SELECT  1 AS one FROM "teams" WHERE "teams"."name" = 'an arbitrary value' LIMIT 1
+  [1m[36mTeam Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = 'AN ARBITRARY VALUE' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$gW5mmrJ6wHbmMr9H53bFuumguV57PTWWmLjIYBhvis3G5/dq4zxai"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:53:40.018282"], ["updated_at", "2016-11-30 21:53:40.018282"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$tMin8/dT9kYXmSGzZEzGPeOkt16p3eIlzK.JXPYYZQdLBF9zBjZJO"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:53:40.039121"], ["updated_at", "2016-11-30 21:53:40.039121"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 21:55:01 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 8359ms (Views: 8358.4ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+Started GET "/about" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+Started GET "/help" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 21:55:10 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 626ms (Views: 33.5ms | ActiveRecord: 1.6ms)
+Started GET "/login" for 127.0.0.1 at 2016-11-30 21:55:11 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 21:55:11 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 21:55:11 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "@tamu.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered static_pages/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 15ms (Views: 4.9ms | ActiveRecord: 0.7ms)
+Started GET "/login_netid" for 127.0.0.1 at 2016-11-30 21:55:11 +0000
+Processing by StaticPagesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "@tamu.edu"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."uin" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('@tamu.edu') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered static_pages/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 6.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2016-11-30 21:55:11 +0000
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 21:55:11 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+Started GET "/signup" for 127.0.0.1 at 2016-11-30 21:55:11 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$LYggy4XF9Dr1fXqqovkNgOCKBtq/7StMUXpnuBSyDwwT0H.GoYwmm"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:55:27.394155"], ["updated_at", "2016-11-30 21:55:27.394155"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:55:27.415048"], ["updated_at", "2016-11-30 21:55:27.415048"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$w8wUt/zXIqCTGCvAuXYbVuwYAXfBUEmJT.7GaTySP2Yh.PuOg5RHi"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:55:28.141652"], ["updated_at", "2016-11-30 21:55:28.141652"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "project1"], ["organization", "org1"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:55:28.220014"], ["updated_at", "2016-11-30 21:55:28.220014"]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("title", "organization", "contact", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "project2"], ["organization", "org2"], ["contact", "xyz"], ["description", "abc"], ["created_at", "2016-11-30 21:55:28.226174"], ["updated_at", "2016-11-30 21:55:28.226174"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mTeam Exists (0.3ms)[0m  SELECT  1 AS one FROM "teams" WHERE "teams"."name" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT  "teams".* FROM "teams"  ORDER BY "teams"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "teams" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-11-30 21:55:28.279491"], ["updated_at", "2016-11-30 21:55:28.279491"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "teams" SET "name" = ?, "updated_at" = ? WHERE "teams"."id" = ?  [["name", "an arbitrary value"], ["updated_at", "2016-11-30 21:55:28.283430"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mTeam Exists (0.2ms)[0m  SELECT  1 AS one FROM "teams" WHERE "teams"."name" = 'an arbitrary value' LIMIT 1
+  [1m[36mTeam Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = 'AN ARBITRARY VALUE' LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728360') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('david@xyz.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["peer_evaluation", nil], ["name", "David"], ["email", "david@xyz.com"], ["password_digest", "$2a$04$bCk9MDyDCdyUQQl0tbjLj.0bYNKWx0Uk6bDTjqQbA/5boUGnPGm1O"], ["uin", "456728360"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:55:28.325020"], ["updated_at", "2016-11-30 21:55:28.325020"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uin") = LOWER('456728361') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('andy@xyz.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("peer_evaluation", "name", "email", "password_digest", "uin", "semester", "year", "course", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["peer_evaluation", nil], ["name", "Andy"], ["email", "andy@xyz.com"], ["password_digest", "$2a$04$55qPiGCu6SO2zbdLn4iMKONn.WI/4SjEG2vRCW2.tQ72yBNRL9uZC"], ["uin", "456728361"], ["semester", "Fall"], ["year", "2016"], ["course", "csce606"], ["created_at", "2016-11-30 21:55:28.342745"], ["updated_at", "2016-11-30 21:55:28.342745"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
