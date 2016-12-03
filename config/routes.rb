@@ -48,7 +48,7 @@ Rails.application.routes.draw do
         get 'unapproved_projects'       => "projects#unapproved"
         get 'peer_evaluation'           => "projects#do_peer_evaluation"
         post 'peer_evaluation'          => "projects#submit_peer_evaluation"
-        get 'edit_projects'              => 'projects#edit'
+        get 'edit_project'              => 'projects#edit'
         
 
         resources :users do

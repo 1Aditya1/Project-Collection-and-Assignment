@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
         before_action :logged_in_user, only: [:index, :show, :edit, :update, :destroy, :approve, :unapprove, :approved, :unapproved, :toggle]
         before_action :admin_user,     only: [:index, :edit, :update, :destroy, :approve, :unapprove, :unapproved, :toggle]
-        skip_before_filter :admin_user, only: [:destroy ]
+        skip_before_filter :admin_user, only: [:destroy , :edit, :update]
         def index
                 @title = "All Projects"
                 @projects = Project.paginate(page: params[:page])
@@ -42,9 +42,9 @@ class ProjectsController < ApplicationController
                      print(p.inspect)
                 
                        if(p.approved?)
-                               @projects["Approved"]<<p
+                               @projects["Approved"]<< p
                        else
-                               @projects["Unapproved"]<<p
+                               @projects["Unapproved"]<< p
                        end
 
                 end
@@ -318,13 +318,9 @@ class ProjectsController < ApplicationController
         end
 
         def edit
-                render 'index'
-                # if current_user.owns(project_id: @project.id)
-                #         flash[:success] = "You can edit the proposal"
-                # else 
-                #         flash[:error] = "You cannot edit the proposal"
-                # end
-                # redirect_to @project
+                @project = Project.find(params[:id])
+                
+                
         end
 
         def update
