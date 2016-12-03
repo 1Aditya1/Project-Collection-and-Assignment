@@ -19,6 +19,21 @@ class ProjectsController < ApplicationController
                 render 'index'
         end
 
+        def myproposals
+                @title = "My Projects"
+                redirect_to approved_projects_url
+               
+               # @owned_projects = Owns.find_by_user_id(current_user)
+               # @unapproved_projects = Project.where("approved = ?", false)
+
+                
+
+                #Find intersection of the above two variables
+
+                
+
+        end
+
         def list_all_users_peer_evaluation
                 @all_pe = []
                 all_users = User.all
@@ -230,6 +245,11 @@ class ProjectsController < ApplicationController
 
 
         def show
+
+                print("\n\nHello \n\n")
+                
+                print("\n\nBye \n\n")
+
                 @project = Project.find(params[:id])
                 @assignment = Assignment.find_by_project_id(@project.id)
                  @members = Array.new
@@ -249,10 +269,12 @@ class ProjectsController < ApplicationController
                 end
                 
                 
-                # if !current_user.admin?  && !@project.approved?
-                #         flash[:danger] = "You do not have priviledge to view this project"
+                if !current_user.admin?  && !@project.approved?
+                         flash[:danger] = "You do not have priviledge to view this project"
                           redirect_to approved_projects_url
-                # end
+                end
+
+
         end
 
         def new
@@ -266,7 +288,14 @@ class ProjectsController < ApplicationController
                 if @project.save
                         current_user.owns.create(project_id: @project.id)
                         flash[:success] = "Project Added for Approval"
-                        redirect_to @project                   
+
+
+                        if current_user.admin?
+                                redirect_to unapproved_projects_url
+
+                        else    redirect_to approved_projects_url
+
+                        end                 
                 else
                         render 'new'
                 end

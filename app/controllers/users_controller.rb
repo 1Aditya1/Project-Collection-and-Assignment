@@ -55,45 +55,28 @@ print(@teams)
 	def project
 
 		@user = User.find(params[:user_id])
-		@own = Own.find_by_user_id(params[:user_id])
 
-		if !own?
-			if !have_permission? 
-				return 
-			end
-			@relationship = Relationship.find_by_user_id(params[:user_id])
-
-			if !have_team?
-				return
-			end
-			@team = Team.find(@relationship.team_id)
-			@assignment = Assignment.find_by_team_id(@team.id)
-	
-			if !have_project?
-				return
-			end
-			@project = Project.find(@assignment.project_id)
-
-
-		#lse
-		#	@project = Project.find(@own.project_id)
-		#	@assignment = Assignment.find_by_project_id(@project.id)
-#
-#			if !have_project?
-#				return
-#			end
-#			@team = Team.find(@assignment.team_id)
+		if !have_permission? 
+			return 
 		end
 		
+		@relationship = Relationship.find_by_user_id(params[:user_id])
+
+		if !have_team?
+			return
+		end
+			
+		@team = Team.find(@relationship.team_id)
+		@assignment = Assignment.find_by_team_id(@team.id)
+	
+		if !have_project?
+			return
+		end
+
+		@project = Project.find(@assignment.project_id)
 		redirect_to project_path(@project)
 
 
-		@member_ids = Relationship.where(team_id: @team.id).all
-		@members = Array.new
-		@member_ids.each do |member| #TO aggregate the members of each team. But isn't an array clumsy?
-			tmp = User.find(member.user_id.to_i)
-			@members << tmp.name.to_s
-		end
 	end
 
 	def upload

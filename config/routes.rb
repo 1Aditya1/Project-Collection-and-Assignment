@@ -35,14 +35,15 @@ Rails.application.routes.draw do
                         patch :toggle
                 end
                 
-                get :legacy
-                post :legacy
-                get :legacy_add
+               # get :legacy
+                #post :legacy
+                #get :legacy_add
                 get :documentation
         end
         resources :password_resets,     only: [:new, :create, :edit, :update]
 
         get 'add_project'               => 'projects#new'
+        get 'myproposals_projects'      => 'projects#myproposals'
         get 'approved_projects'         => "projects#approved"
         get 'unapproved_projects'       => "projects#unapproved"
         get 'peer_evaluation'           => "projects#do_peer_evaluation"
