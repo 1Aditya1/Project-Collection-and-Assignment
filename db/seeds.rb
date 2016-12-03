@@ -27,8 +27,8 @@ user.save!
    uin   = Faker::Number.number(9)
    email = "example-#{n+1}@railstutorial.org"
    password = "password"
-   semester = "Fall"
-   year = 2016.to_s
+   semester = n%3 == 0 ? "Spring" : "Fall"
+   year = rand(2000..2026).to_s
    course = 'CSCE606'
    User.create!(name:  name,
                  uin: uin,

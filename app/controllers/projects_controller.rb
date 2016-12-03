@@ -246,9 +246,7 @@ class ProjectsController < ApplicationController
                         @members << tmp.name.to_s
 
                 end
-                
                 end
-
                 if !current_user.admin? && !@project.approved?
                         flash[:danger] = "You do not have priviledge to view this project"
                         redirect_to approved_projects_url
@@ -266,14 +264,20 @@ class ProjectsController < ApplicationController
                 if @project.save
                         current_user.owns.create(project_id: @project.id)
                         flash[:success] = "Project Added for Approval"
-                        redirect_to @project
+                        redirect_to @project                   
                 else
                         render 'new'
                 end
         end
 
         def edit
-                @project = Project.find(params[:id])
+                render 'index'
+                # if current_user.owns(project_id: @project.id)
+                #         flash[:success] = "You can edit the proposal"
+                # else 
+                #         flash[:error] = "You cannot edit the proposal"
+                # end
+                # redirect_to @project
         end
 
         def update
