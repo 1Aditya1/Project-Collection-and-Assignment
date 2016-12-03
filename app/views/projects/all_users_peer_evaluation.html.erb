@@ -6,8 +6,9 @@
             <thead>
                 <tr>
                     <th>User Name</th>
-                    <th>Team</th>
+                    <th>Team (click team name to view team score details)</th>
                     <th>Score</th>
+                    <th>Team Size</th>
                     <th>Comment</th>
                 </tr>
             </thead>
@@ -17,6 +18,8 @@
                         <td> <%= link_to "#{pe[0]}", peer_evaluation_path(:check_one_user_peer_evaluation => "#{pe[4]}") %> </td>
                         <td> <%= link_to "#{pe[1]}", peer_evaluation_path(:check_team_peer_evaluation => "#{pe[5]}") %> </td>
                         <td> <%= pe[2] %> </td>
+                        <td> <%= pe[6]  %> </td>
+
                         <td>
                             <% if not pe[3].empty? %>
                                 <% pe[3].each do |comment| %>

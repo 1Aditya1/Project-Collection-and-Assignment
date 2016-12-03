@@ -25,15 +25,15 @@
             <%= f.label :description %><br>
             <%= f.text_area :description, class: "form_control", rows: 8 %>
 
-            <%= f.label :oncampus , "*Is On-Campus ?" %><br/>
-            <%= f.check_box :oncampus, class: "form_control" %>
+            <%= f.label :oncampus , "*Is On-Campus ?"  ,  class: "checkbox inline"  do  %>
+            <%= f.check_box :oncampus, class: "form_control"  %>
+                    <span>Is On-Campus ?</span>
+                 <% end %>
 
-            <br/><br/>
-
-            <%= f.label :islegacy, "*Is Legacy Project ?" %><br/>
+            <%= f.label :islegacy, "*Is Legacy Project ?" ,  class: "checkbox inline" do%>
             <%= f.check_box :islegacy, class: "form_control" %>
-            
-            
+                    <span>Is Legacy Project ?</span>
+                 <% end %>
 
             <div class="col-md-6 col-md-offset-3">
                 <%= f.submit "Submit", class: "btn btn-primary" %>
@@ -46,5 +46,5 @@
 
 <br/><br/> <br/>
 <i><b>*On-Campus  Project</i>: </b>
-A project whose customer location is reachable by <a href="http://transport.tamu.edu/busroutes/" target="_blank">TAMU Buses</a><br/>
+A project whose customer location is reachable by the <a href="http://transport.tamu.edu/busroutes/" target="_blank">Texas A&M Bus Network.</a><br/>
 <i><b>*Legacy Project </i>: </b> A project which is already in production. The proposal is for the enhancement. <br/>

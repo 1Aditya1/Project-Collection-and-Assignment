@@ -32,12 +32,17 @@
     <td><%= @team.code %></td>
   </tr>
 
+
   <tr>
     <th>Team Members</th>
     <td>
+      <center>
       <ol>
       <% @members.each do |m| %>
+            </center>
+
         <li>
+
           <% if current_user.admin? %>
             <%= link_to m.name, m %>
 			<%= button_to "Remove", {action: "remove", user_id: m.id} %>
@@ -53,6 +58,7 @@
 			<% end %>
 		<% end %>
       </ol>
+
     </td>
   </tr>
 </table>

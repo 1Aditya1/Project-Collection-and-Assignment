@@ -104,6 +104,8 @@ class ProjectsController < ApplicationController
 
                                 user_pe << user.id
                                 user_pe << team.id
+								user_pe << team.members.size
+
                         end
 
                         @all_pe << user_pe
@@ -247,12 +249,13 @@ class ProjectsController < ApplicationController
                         end
                 end
 
-                if score_sum != 80
-                        flash.now[:danger] = 'The scores summary is not equal to 80.'
+                if score_sum != result.size*10
+                        flash.now[:danger] =  "The scores should sum to " + (result.size*10).to_s + '.'
+
+
                         do_peer_evaluation
                         return
                 end
-
 
                 user = User.find_by(id: current_user.id)
                 user.peer_evaluation = result
@@ -268,8 +271,8 @@ class ProjectsController < ApplicationController
 
                 @project = Project.find(params[:id])
                 @assignment = Assignment.find_by_project_id(@project.id)
-                 @members = Array.new
-                 @team = nil
+                @members = Array.new
+                @team = nil
 
                 if @assignment!=nil
 
