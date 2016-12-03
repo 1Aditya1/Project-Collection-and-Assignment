@@ -247,10 +247,12 @@ class ProjectsController < ApplicationController
 
                 end
                 end
-                if !current_user.admin? && !@project.approved?
-                        flash[:danger] = "You do not have priviledge to view this project"
-                        redirect_to approved_projects_url
-                end
+                
+                
+                # if !current_user.admin?  && !@project.approved?
+                #         flash[:danger] = "You do not have priviledge to view this project"
+                          redirect_to approved_projects_url
+                # end
         end
 
         def new

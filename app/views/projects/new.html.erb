@@ -16,12 +16,12 @@
             <%= f.label :contact %><br>
             <%= f.text_area :contact, class: "form_control", rows: 4 %>
             
-            <%= f.label :semseter, "*Semester " %><br/>
-            <%= f.text_field :semester, class: "form_control" %>
+            <%= f.label :semester%>
+            <%= f.select :semester ,[['Fall', 'Fall'] ,['Spring' ,'Spring'] ,['Summer' ,'Summer']],:include_blank => {:semester => "Select Semester"} %>
+      
+            <%= f.label :year %>
+            <%= f.select :year, (2000..Time.now.year + 10).to_a, :include_blank => {:year => "Select year"} %>
             
-            <%= f.label :year, "*Date Created " %><br/>
-            <%= f.text_field :year, class: "form_control" %>
-
             <%= f.label :description %><br>
             <%= f.text_area :description, class: "form_control", rows: 8 %>
 
