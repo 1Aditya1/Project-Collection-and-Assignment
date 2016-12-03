@@ -49,23 +49,31 @@
 
 	<tr>
   	<th>Team</th>
+
+    <% if @assignment!=nil %>
   	<td><%=link_to @team.name, team_path(@team) %></td>
+
+    <% else %>
+    <td>Not assigned to any team yet </td>
+    <% end %>    
+
   </tr>
 	<tr>
   	<th>Members</th>
   	<td>
     <ol>
 
-    <% if current_user.admin? %>
+    <% if current_user.admin? && @assignment!=nil%>
     <% @members.zip(@member_ids).each do |value,id| %>
     <li><%= link_to value, user_path(id) %></li>
     <% end %>
 
-    <% else %>
+    <% elsif !current_user.admin? && @assignment!=nil%>
     <% @members.zip(@member_ids).each do |value,id| %>
     <li><%= value %></li>
     <% end %>
-
+    <% else %>
+    N/A
     <% end %>
 
     	<tr>

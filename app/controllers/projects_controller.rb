@@ -231,16 +231,22 @@ class ProjectsController < ApplicationController
 
         def show
                 @project = Project.find(params[:id])
-                @team = Team.find(Assignment.find_by_project_id(@project.id).team_id)
+                @assignment = Assignment.find_by_project_id(@project.id)
+                 @members = Array.new
+                 @team = nil
 
-                print(@team)
-	
+                if @assignment!=nil
 
-	     	@member_ids = Relationship.where(team_id: @team.id).all
-		@members = Array.new
-		@member_ids.each do |member| #TO aggregate the members of each team. But isn't an array clumsy?
-			tmp = User.find(member.user_id.to_i)
-		@members << tmp.name.to_s
+                        @team = Team.find(@assignment.team_id)
+                
+
+                        @member_ids = Relationship.where(team_id: @team.id).all
+                        @member_ids.each do |member| #TO aggregate the members of each team. But isn't an array clumsy?
+                                tmp = User.find(member.user_id.to_i)
+                        @members << tmp.name.to_s
+
+                end
+                
                 end
 
                 if !current_user.admin? && !@project.approved?
