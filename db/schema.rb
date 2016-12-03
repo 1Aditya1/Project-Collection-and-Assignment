@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161118052759) do
+ActiveRecord::Schema.define(version: 20161127005105) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer  "team_id"
@@ -75,6 +75,8 @@ ActiveRecord::Schema.define(version: 20161118052759) do
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
     t.boolean  "approved",     default: false
+    t.string   "semester"
+    t.date     "year"
   end
 
   create_table "relationships", force: :cascade do |t|

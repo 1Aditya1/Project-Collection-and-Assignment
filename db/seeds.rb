@@ -6,7 +6,7 @@ user.email = "admin@example.com"
 user.password = 'adminadmin'
 user.admin = true
 user.semester = 'Fall'
-user.year =  2016.to_s
+user.year =  2016.to_s #Faker::Number.between(2000 ,2026).to_s
 user.course = 'CSCE606'
 user.save!
 
@@ -48,13 +48,17 @@ user.save!
    oncampus = n%3 == 0 ? false : true
    islegacy = n%4 == 0 ? false : true
    approved = false
+   semester = 'Fall'
+   year =  Faker::Time.between(2.years.ago, Time.now) #Faker::Number.between(2000 ,2026).to_s
    Project.create!(title:  title,
                    organization: organization,
                    contact: contact,
                    description: description,
                    oncampus: oncampus,
                    islegacy: islegacy,
-                   approved: approved)
+                   approved: approved,
+                   semester: semester,
+                   year: year)
  end
 
  25.times do |n|
@@ -65,13 +69,17 @@ user.save!
    oncampus = n%3 == 0 ? false : true
    islegacy = n%4 == 0 ? false : true
    approved = true
+   semester = 'Fall'
+   year =  Faker::Time.between(2.years.ago, Time.now) #2016.to_s #Faker::Number.between(2000 ,2026).to_s
    Project.create!(title:  title,
                   organization: organization,
                    contact: contact,
                                       description: description,
                    oncampus: oncampus,
                    islegacy: islegacy,
-                   approved: approved)
+                   approved: approved,
+                   semester: semester,
+                   year: year)
  end
 
  users = User.all
