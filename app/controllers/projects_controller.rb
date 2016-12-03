@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
         before_action :logged_in_user, only: [:index, :show, :edit, :update, :destroy, :approve, :unapprove, :approved, :unapproved, :toggle]
         before_action :admin_user,     only: [:index, :edit, :update, :destroy, :approve, :unapprove, :unapproved, :toggle]
-
+        skip_before_filter :admin_user, only: [:destroy ]
         def index
                 @title = "All Projects"
                 @projects = Project.paginate(page: params[:page])
@@ -20,17 +20,36 @@ class ProjectsController < ApplicationController
         end
 
         def myproposals
-                @title = "My Projects"
-                redirect_to approved_projects_url
-               
-               # @owned_projects = Owns.find_by_user_id(current_user)
-               # @unapproved_projects = Project.where("approved = ?", false)
-
+                @title = "My Proposals"
                 
+                owned_projects = Own.where(:user_id => current_user)
+                unapproved_projects = Project.where("approved = ?", false)
 
-                #Find intersection of the above two variables
+                @projects = Hash.new
+                @projects["Approved"] = []
+                @projects["Unapproved"] = []
 
+                owned_projects.each do |owned_proj|
+
+
+                        #if(!Project.exists?(:id => owned_proj.project_id))
+                         #       next
+                        #end
+
+                       p = Project.find(owned_proj.project_id)
+
+                     
+                     print(p.inspect)
                 
+                       if(p.approved?)
+                               @projects["Approved"]<<p
+                       else
+                               @projects["Unapproved"]<<p
+                       end
+
+                end
+
+                print(@projects)
 
         end
 
@@ -246,9 +265,6 @@ class ProjectsController < ApplicationController
 
         def show
 
-                print("\n\nHello \n\n")
-                
-                print("\n\nBye \n\n")
 
                 @project = Project.find(params[:id])
                 @assignment = Assignment.find_by_project_id(@project.id)
@@ -264,18 +280,18 @@ class ProjectsController < ApplicationController
                         @member_ids.each do |member| #TO aggregate the members of each team. But isn't an array clumsy?
                                 tmp = User.find(member.user_id.to_i)
                         @members << tmp.name.to_s
+                end
+                end
+                
+                owned = Own.find_by_project_id(params[:id])
 
-                end
-                end
-                
-                
-                if !current_user.admin?  && !@project.approved?
+                if !current_user.admin?  && !@project.approved? && owned.user_id != current_user.id
+                       
                          flash[:danger] = "You do not have priviledge to view this project"
                           redirect_to approved_projects_url
                 end
-
-
         end
+        
 
         def new
                 @project = Project.new
@@ -293,7 +309,7 @@ class ProjectsController < ApplicationController
                         if current_user.admin?
                                 redirect_to unapproved_projects_url
 
-                        else    redirect_to approved_projects_url
+                        else    redirect_to myproposals_projects_url
 
                         end                 
                 else
@@ -322,9 +338,27 @@ class ProjectsController < ApplicationController
         end
 
         def destroy
+
+                print("\n\nHello\n\n")
+
                 Project.find(params[:id]).destroy
+                x = Own.find_by_project_id(params[:id])
+
+
+                if(!x.nil?)
+                        x.destroy
+                end
+                print(x.inspect)
+                
+                
                 flash[:success] = "Project deleted"
+
+                if(current_user.admin?)
                 redirect_to projects_url
+
+                else
+                redirect_to myproposals_projects_url(current_user)
+                end 
         end
 
 
