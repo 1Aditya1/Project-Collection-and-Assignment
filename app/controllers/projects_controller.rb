@@ -288,7 +288,7 @@ class ProjectsController < ApplicationController
                 
                 owned = Own.find_by_project_id(params[:id])
 
-                if !current_user.admin?  && !@project.approved? && owned.user_id != current_user.id
+                if !current_user.admin?  && !@project.approved? || (owned!=nil && owned.user_id != current_user.id)
                        
                          flash[:danger] = "You do not have priviledge to view this project"
                           redirect_to approved_projects_url
