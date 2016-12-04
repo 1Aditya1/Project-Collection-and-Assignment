@@ -30,6 +30,8 @@ class TeamsController < ApplicationController
         @leaders[team.id] = team.leader
         @status[team.id] =  ((Assignment.where(:team_id => team.id).blank?) ? "No" : "Yes")
   end
+  @sorting = params[:sort]
+  @teams = Team.order(@sorting).all.paginate(page: params[:page])
   print(@status)
 
     else

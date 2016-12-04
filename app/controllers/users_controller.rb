@@ -10,9 +10,7 @@ class UsersController < ApplicationController
     #@users = User.order("lower(name) ASC").all.paginate(page: params[:page])
 	#@users = User.order("lower(uin) ASC").all.paginate(page: params[:page])
 	@sorting = params[:sort]
-	    User.order( @sorting ? @sorting : :id).each do |mv|
-            (@users ||= [ ]) << mv
-		end
+	    
 		@users = User.order(@sorting).all.paginate(page: params[:page])	
 		@teams = {}
 		

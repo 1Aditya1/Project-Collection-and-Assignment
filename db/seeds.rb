@@ -36,7 +36,7 @@ user.save!
    oncampus = n%3 == 0 ? false : true
    islegacy = n%4 == 0 ? false : true
    approved = false
-   semester = 'Fall'
+   semester = n%3 == 0 ? 'Fall' : 'Spring'
    year =  rand(2000..2026).to_s
    Project.create!(title:  title,
                    organization: organization,
@@ -58,7 +58,7 @@ user.save!
    oncampus = n%3 == 0 ? false : true
    islegacy = n%4 == 0 ? false : true
    approved = true
-   semester = 'Fall'
+   semester = n%3 == 0 ? 'Fall' : 'Spring'
    year =  rand(2000..2026).to_s
    Project.create!(title:  title,
                   organization: organization,
@@ -82,7 +82,7 @@ user.save!
    islegacy = true
    approved = n%2==0 ? false : true
    legacy_id = rand(0..55)
-   semester = 'Fall'
+   semester = n%3 == 0 ? 'Fall' : 'Spring'
    year =  rand(2015..2017).to_s
    Project.create!(title:  title,
                    organization: organization,

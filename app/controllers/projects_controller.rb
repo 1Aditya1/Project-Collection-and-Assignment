@@ -2,9 +2,18 @@ class ProjectsController < ApplicationController
         before_action :logged_in_user, only: [:index, :show, :edit, :update, :destroy, :approve, :unapprove, :approved, :unapproved, :toggle]
         before_action :admin_user,     only: [:index, :edit, :update, :destroy, :approve, :unapprove, :unapproved, :toggle]
         skip_before_filter :admin_user, only: [:destroy , :edit, :update]
+        
         def index
                 @title = "All Projects"
-                @projects = Project.paginate(page: params[:page])
+                @sorting = params[:sort]
+                print ("\n\n\n Hello \n\n\n")
+                print(@sorting)
+                print ("\n\n\n Bye \n\n\n")
+                if @sorting == 'year'
+                        @projects = Project.order("year DESC,semester DESC").all.paginate(page: params[:page])
+                else
+                        @projects = Project.order(@sorting).all.paginate(page: params[:page])
+                end
         end
 
         def approved

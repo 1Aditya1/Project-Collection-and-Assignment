@@ -8,8 +8,8 @@
 <table class="projects">
 
 <tr>
-<th>Semester</th>
-<th>Title</th>
+<th><%=link_to "Semester",projects_path(:sort => "year")%></th>
+<th><%=link_to "Title",projects_path(:sort => "title")%></th>
 <th>Legacy</th>
 <th>On Campus</th>
 <% if current_user.admin? %>
