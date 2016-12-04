@@ -10,18 +10,6 @@ user.year =  2016.to_s #Faker::Number.between(2000 ,2026).to_s
 user.course = 'CSCE606'
 user.save!
 
-# User.create!(name:  "administrator",
-#              email: "admin@example.com",
-#              password:              "adminadmin",
-#              password_confirmation: "adminadmin",
-#              admin: true)
-
-# User.create!(name:  "Jasmeet Singh",
-#              email: "jasmeet13n@tamu.edu",
-#              password:              "iiit123",
-#              password_confirmation: "iiit123",
-#              admin: false)
-
  99.times do |n|
    name  = Faker::Name.name
    uin   = Faker::Number.number(9)
@@ -61,6 +49,7 @@ user.save!
                    year: year)
  end
 
+
  25.times do |n|
    title  = Faker::Company.catch_phrase
    organization = Faker::Company.name
@@ -74,13 +63,42 @@ user.save!
    Project.create!(title:  title,
                   organization: organization,
                    contact: contact,
-                                      description: description,
+                  description: description,
                    oncampus: oncampus,
                    islegacy: islegacy,
                    approved: approved,
                    semester: semester,
                    year: year)
  end
+
+
+
+ 50.times do |n|
+   title  = Faker::Company.catch_phrase
+   organization = Faker::Company.name
+   contact = Faker::Name.name + "  " + Faker::PhoneNumber.cell_phone
+   description = Faker::Lorem.paragraph
+   oncampus = n%3 == 0 ? false : true
+   islegacy = true
+   approved = n%2==0 ? false : true
+   legacy_id = rand(0..55)
+   semester = 'Fall'
+   year =  rand(2015..2017).to_s
+   Project.create!(title:  title,
+                   organization: organization,
+                   contact: contact,
+                   description: description,
+                   oncampus: oncampus,
+                   islegacy: islegacy,
+                   legacy_id: legacy_id,
+                   approved: approved,
+                   semester: semester,
+                   year: year)
+ end
+
+
+
+
 
  users = User.all
 

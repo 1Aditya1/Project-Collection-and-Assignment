@@ -3,32 +3,37 @@
 <div class="row">
 <div class="col-md-10 col-md-offset-1">
 
-<ul class="projects">
-	<li>
+	<table>
+	<tr>
 		<div class="col-md-6">
-    		<h2>Project Title</h2>
+    		<th>Project Title</th>
   		</div>
 
   		<div class="col-md-3">
-  	  		<h2>Team Assignment</h2>
+  	  		<th>Team Assignment</th>
 		</div>
 		<div class="col-md-1">
-  	  		<h2>Preference</h2>
+  	  		<th>Preference</th>
 		</div>
-	</li>
-    <% for i in 0..(@assignments.size-1)%>
-	  	<li>
-	  		<div class="col-md-6">
+
+		<div class="col-md-1">
+  	  		<th>Delete</th>
+		</div>
+	</tr>
+
+	<% for i in 0..(@assignments.size-1)%>
+	  	<tr>
+	  		<td class="col-md-6">
 	  			<a href="projects/<%=@assignments[i][:project_id]%>">
 	  			<%=@assignments[i][:project_title]%>
 	  			</a>
-	  		</div>
-	  		<div class="col-md-3">
+	  		</td>
+	  		<td class="col-md-3">
 	  			<a href="teams/<%=@assignments[i][:team_id]%>">
 	  			<%= @assignments[i][:team_name]%>
 	  			</a>
-	  		</div>
-	  		<div class="col-md-1">
+	  		</td>
+	  		<td class="col-md-1">
 	  			<% pref = Preference.find_by(team_id: @assignments[i][:team_id], project_id: @assignments[i][:project_id]) %>
 	  			<% pref_name = {-1 => "Bottom", 0 => "Neutral", 1 => "Top"} %>
 	  			<% if pref %>
@@ -36,13 +41,13 @@
 	  			<% else %>
 	  				<%= pref_name[0] %>
 	  			<% end %>
-	  		</div>
-			<div>
+	  		</td>
+			<td>
 				<%= button_to "Delete Assignment", {action: "delete", team_id: @assignments[i][:team_id], project_id: @assignments[i][:project_id]} %>
-			</div>
-	  	</li>
+			</td>
+	  	</tr>
   	<% end %>
-</ul>
+</table>
 </div>
 </div>
 <br> <br>

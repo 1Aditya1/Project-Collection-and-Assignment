@@ -17,7 +17,7 @@
   </tr>
     <tr>
   	<th>Semester</th>
-  	<td>None</td>
+  	<td><%= @project.semester + " "  + @project.year %> </td>
   </tr>
 
   <tr>
@@ -32,7 +32,7 @@
   <tr>
   <tr>
   	<th>Created On</th>
-  	<td><%=@project.year %></td>
+  	<td><%=@project.created_at.localtime %></td>
   </tr>
   	<th>Description</th>
   	<td><%= @project.description %></td>
@@ -44,7 +44,11 @@
 
   <tr>
   	<th>Is Legacy</th>
-  	<td><%= @project.islegacy? ? 'Yes':'No' %> <%#= link_to "(Legacy Details)",project_legacy_path(@project)%> </td>
+  	<td><%= @project.islegacy? ? 'Yes':'No' %> 
+    
+    <% if @project.legacy_id!=nil %>
+    <%= link_to "(Link to Legacy Project)", project_path(@project.legacy_id)%> </td>
+    <% end %>
   </tr>
 
 	<tr>
@@ -76,21 +80,23 @@
     N/A
     <% end %>
 
-    	<tr>
+
+    <% if @assignment!=nil %>
+  <tr>
   <th>Project Documentation</th>
+
   	<td><%=link_to "View", project_documentation_path(@project) %></td>
+    <% end %>
   </tr>
 
     </ol>
     
     </td>
   </tr>
-  <% if current_user.admin? %>
   <tr>
     <th>Approved</th>
     <td><%= @project.approved? ? 'Yes':'No' %></td>
   </tr>
-  <% end %>
 </table>
 
 </div>

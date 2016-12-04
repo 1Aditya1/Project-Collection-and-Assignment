@@ -298,16 +298,25 @@ class ProjectsController < ApplicationController
 
         def new
                 @project = Project.new
+                @opt = Project.all.order("title")
+                @options   =  @opt.collect{|p| [p.title, p.id]}
+
+                print(@options.inspect)
         end
 
        
 
         def create
+
+                print("\n\nCREATE\n\n")
+                print(project_params)
+
                 @project = Project.new(project_params)
+
+
                 if @project.save
                         current_user.owns.create(project_id: @project.id)
                         flash[:success] = "Project Added for Approval"
-
 
                         if current_user.admin?
                                 redirect_to unapproved_projects_url
@@ -396,26 +405,7 @@ class ProjectsController < ApplicationController
                         redirect_to root_url
                 end
         end
-	def update_project
-		#@relationship = Relationship.find_by_user_id(params[:user_id])
-		#@team = Team.find(@relationship.team_id)
-		#@assignment = Assignment.find_by_team_id(@team.id)
-		#@project = Project.find(@assignment.project_id)
-		@project = Project.find_by(id: params[:id])
-		@project.iteration0 = params[:project][:iteration0]
-		@project.iteration1 = params[:project][:iteration1]
-		@project.iteration2 = params[:project][:iteration2]
-		@project.iteration3 = params[:project][:iteration3]
-		@project.iteration4 = params[:project][:iteration4]
-		@project.first_video = params[:project][:first_video]
-		@project.final_video = params[:project][:final_video]
-		@project.final_report = params[:project][:final_report]
-		@project.poster = params[:project][:poster]		
-		@project.source_code = params[:project][:source_code]	
-		@project.save	
-		flash[:success] = "Successfully updated"
-		redirect_to projects_path(params[:user_id])
-	end
+	
         def unapprove
                 project = Project.find_by(id: params[:id])
                 if project
@@ -447,9 +437,9 @@ class ProjectsController < ApplicationController
         private
         def project_params
                 if current_user && current_user.admin?
-                        params.require(:project).permit(:title, :organization, :contact, :description, :oncampus, :islegacy, :approved)
+                        params.require(:project).permit(:title, :organization, :contact, :description, :oncampus, :islegacy, :approved, :semester, :year, :legacy_id)
                 else
-                        params.require(:project).permit(:title, :organization, :contact, :description, :oncampus, :islegacy)
+                        params.require(:project).permit(:title, :organization, :contact, :description, :oncampus, :islegacy, :semester, :year, :legacy_id)
                 end
         end
 end
