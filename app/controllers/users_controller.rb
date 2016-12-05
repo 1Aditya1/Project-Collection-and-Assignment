@@ -11,7 +11,8 @@ class UsersController < ApplicationController
 	#@users = User.order("lower(uin) ASC").all.paginate(page: params[:page])
 	@sorting = params[:sort]
 	    
-		@users = User.order(@sorting).all.paginate(page: params[:page])	
+			@users = User.all	
+
 		@teams = {}
 		
 		@users.each do |user|
@@ -23,7 +24,29 @@ class UsersController < ApplicationController
 				@teams[user.id]  = nil
 			end
 		end
-print(@teams)
+
+		if !session.key?(:teamorder)
+		session[:teamorder] = nil
+		end
+		
+		if @sorting == "currteam"
+			nil_team_users = @users.select{|x| @teams[x.id] == nil}
+			other_team_users = @users.select{|x| @teams[x.id] != nil}
+
+			if(session[:teamorder] == false)
+							@users = (other_team_users + nil_team_users).paginate(page: params[:page])
+							session[:teamorder] = true
+
+			else
+							@users = (nil_team_users + other_team_users).paginate(page: params[:page])
+							session[:teamorder] = false
+
+			end
+
+
+		else
+			@users = @users.order(@sorting).paginate(page: params[:page])
+		end
   end
 
   def show
@@ -73,108 +96,8 @@ print(@teams)
 
 		@project = Project.find(@assignment.project_id)
 		redirect_to project_path(@project)
-
-
 	end
 
-	def upload
-		@user = User.find(params[:user_id])
-		@own = Own.find_by_user_id(params[:user_id])
-
-		if !current_user?(@user) 
-			flash[:warning] = "You have no right"
-			redirect_to current_user
-			return
-		end
-
-		if !own?
-			@relationship = Relationship.find_by_user_id(params[:user_id])
-			@team = Team.find(@relationship.team_id)
-			@assignment = Assignment.find_by_team_id(@team.id)
-			@project = Project.find(@assignment.project_id)
-		else
-			@project = Project.find(@own.project_id)
-			@assignment = Assignment.find_by_project_id(@project.id)
-			@team = Team.find(@assignment.team_id)
-		end
-		
-
-		iteration0 = params[:iteration0]
-		iteration1 = params[:iteration1]
-		iteration2 = params[:iteration2]
-		iteration3 = params[:iteration3]
-		iteration4 = params[:iteration4]
-		poster = params[:poster]
-		first_video = params[:first_video]
-		final_video = params[:final_video]
-		final_report = params[:final_report]
-
-		if iteration0 != nil
-			@project.iteration0 = iteration0.original_filename.to_s
-			upload_file(iteration0)
-		end
-		if iteration1 != nil
-			@project.iteration1 = iteration1.original_filename.to_s
-			upload_file(iteration1)
-		end
-		if iteration2 != nil
-			@project.iteration2 = iteration2.original_filename.to_s
-			upload_file(iteration2)
-		end
-		if iteration3 != nil
-			@project.iteration3 = iteration3.original_filename.to_s
-			upload_file(iteration3)
-		end
-		if iteration4 != nil
-			@project.iteration4 = iteration4.original_filename.to_s
-			upload_file(iteration4)
-		end
-		if poster != nil
-			@project.poster = poster.original_filename.to_s
-			upload_file(poster)
-		end
-		if first_video != nil
-			@project.first_video = first_video.original_filename.to_s
-			upload_file(first_video)
-		end
-		if final_video != nil
-			@project.final_video = final_video.original_filename.to_s
-			upload_file(final_video)
-		end
-		if final_report != nil
-			@project.final_report = final_report.original_filename.to_s
-			upload_file(final_report)
-		end
-		@project.save
-		
-		redirect_to user_project_path(params[:user_id])
-	end
-
-	def download
-		@user = User.find(params[:user_id])
-		@own = Own.find_by_user_id(params[:user_id])
-
-		if !current_user?(@user) 
-			flash[:warning] = "You have no right"
-			redirect_to current_user
-			return
-		end
-		
-		if !own?
-			@relationship = Relationship.find_by_user_id(params[:user_id])
-			if !have_team?
-				return
-			end
-		else
-			@project = Project.find(@own.project_id)
-			@assignment = Assignment.find_by_project_id(@project.id)
-			@relationship = Relationship.find_by_team_id(@assignment.team_id)
-		end
-		
-		@team = Team.find(@relationship.team_id)
-		filename = params[:filename]
-		send_file("./public/uploads/"+@team.id.to_s+"/"+filename.to_s, :filename => filename.to_s, :type => "application/pdf")
-	end
 
   def update
     @user = User.find(params[:id])

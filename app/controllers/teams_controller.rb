@@ -21,18 +21,41 @@ class TeamsController < ApplicationController
       @counts = Hash.new
       @leaders = Hash.new
       @status  = Hash.new
-      @teams = Team.paginate(page: params[:page])
+      @teams = Team.all
 
-      print(@teams.inspect)
       @teams.each do |team|
         count = (Relationship.where(team_id:team.id).count)  
         @counts[team.id]  =  count
         @leaders[team.id] = team.leader
         @status[team.id] =  ((Assignment.where(:team_id => team.id).blank?) ? "No" : "Yes")
-  end
+        end #end do
+
   @sorting = params[:sort]
-  @teams = Team.order(@sorting).all.paginate(page: params[:page])
-  print(@status)
+
+  	if !session.key?(:assignorder)
+		  session[:assignorder] = true
+		end
+
+    print(session[:assignorder])
+    print("\n\nHello\n\n")
+
+		if @sorting == "assigned"
+			unassigned_teams = @teams.select{|x| @status[x.id] == "No"}
+			assigned_teams = @teams.select{|x| @status[x.id] != "No"}
+
+			if(session[:assignorder] == false)
+							@teams = (unassigned_teams + assigned_teams).paginate(page: params[:page])
+							session[:assignorder] = true
+			else
+							@teams = (assigned_teams + unassigned_teams).paginate(page: params[:page])
+							session[:assignorder] = false
+			end
+
+		else
+			@teams = @teams.order(@sorting).paginate(page: params[:page])
+		end
+
+
 
     else
       @team = current_user.is_member_of
