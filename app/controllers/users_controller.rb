@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 		if !session.key?(:teamorder)
 		session[:teamorder] = nil
 		end
-		
+
 		if @sorting == "currteam"
 			nil_team_users = @users.select{|x| @teams[x.id] == nil}
 			other_team_users = @users.select{|x| @teams[x.id] != nil}
@@ -42,8 +42,6 @@ class UsersController < ApplicationController
 							session[:teamorder] = false
 
 			end
-
-
 		else
 			@users = @users.order(@sorting).paginate(page: params[:page])
 		end

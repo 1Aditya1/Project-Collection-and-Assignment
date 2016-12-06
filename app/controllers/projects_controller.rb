@@ -6,9 +6,6 @@ class ProjectsController < ApplicationController
         def index
                 @title = "All Projects"
                 @sorting = params[:sort]
-                print ("\n\n\n Hello \n\n\n")
-                print(@sorting)
-                print ("\n\n\n Bye \n\n\n")
                 if @sorting == 'year'
                         @projects = Project.order("year DESC,semester DESC").all.paginate(page: params[:page])
                 else
@@ -340,12 +337,17 @@ class ProjectsController < ApplicationController
 
         def edit
                 @project = Project.find(params[:id])
+        
+                @opt = Project.all.order("title")
+                @options   =  @opt.collect{|p| [p.title, p.id]}
+
                 
                 
         end
 
         def update
                 @project = Project.find(params[:id])
+                
                 if @project.update_attributes(project_params)
                         flash[:success] = "Project details updated"
                         redirect_to @project

@@ -1,4 +1,33 @@
-<% provide(:title, 'Add a Project') %>
+<% provide(:title, 'Edit Project') %>
+
+
+<script type="text/javascript">
+
+$( document ).ready(function(){
+
+
+  $(".legacy_ip").hide();
+
+$(".toggle_legacy").change(function()
+{
+
+
+  if(!this.checked)
+  {
+  $('.legacy_ip').val('')
+  $('.legacy_ip').hide();
+  }
+  else
+  {
+
+  $('.legacy_ip').show();
+  }
+
+});
+});
+</script>
+
+
 <h1>Enter Project Proposal</h1>
 
 <div class="row">
@@ -31,7 +60,11 @@
             <br/><br/>
 
             <%= f.label :islegacy, "*Is Legacy Project ?" %><br/>
-            <%= f.check_box :islegacy, class: "form_control" %>
+            <%= f.check_box :islegacy, class: "form_control toggle_legacy"  %>
+            
+            </br>
+            <%= f.label :legacy_id, "Legacy Project Link (optional)" , class: "legacy_ip"   %><br/>
+            <%= f.select :legacy_id, @options,  {:prompt=>"Select legacy project"}, {:class => "form_control legacy_ip"}%>
             
             
 
