@@ -90,12 +90,6 @@ class TeamsController < ApplicationController
 
 	def remove
 
-    print("\n\n")
-    print(params)
-    print("\nLeader : ")
-    print(Team.find(params[:team_id]).leader.inspect)
-    print("\n\n")
-
     if current_user.admin? && params[:user_id]==Team.find(params[:team_id]).leader.id.to_s()
       flash[:danger]  = "Error . . .  You cannot remove the team leader!"
 
@@ -112,21 +106,16 @@ class TeamsController < ApplicationController
 		usr = User.find_by_name(params[:user_name].to_s)
 		on_team = Relationship.find_by_user_id(usr.id)
 
-    print("\nHello\n")
     print(params)
 		if on_team != nil
 			flash[:error] = "This user is already on a team"
 			redirect_to teams_path
 			
 
-    print(Relationship.where(team_id:params[:team_id]).count)
-
-
     elsif !current_user.admin? && (Relationship.where(team_id:params[:team_id]).count) >= 6
           flash[:danger]  = "Sorry, this team has already reached the capacity of 6 members. "
           redirect_to teams_path
     
-
     else
 		relationship = Relationship.new
 		relationship.team_id = params[:team_id].to_s
@@ -180,6 +169,15 @@ class TeamsController < ApplicationController
 
   def destroy
     Team.find(params[:id]).destroy
+
+    #If this team is deleted, destory its project assginment too!
+
+    assignment = Assignment.find_by_team_id(params[:id])
+
+    if !assignment.nil?
+      assignment.destroy
+    end
+
     flash[:success] = "Team deleted"
     redirect_to teams_path
   end
