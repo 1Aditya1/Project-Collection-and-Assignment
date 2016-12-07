@@ -112,10 +112,21 @@ class AssignmentsController < ApplicationController
     end
   end
 
+  def clearall
+    Assignment.delete_all
+    redirect_to viewassign_path
+  end
+
 	def delete
 		@assigned = Assignment.find_by_project_id(params[:project_id])
-		@assigned.destroy
-		flash[:success] = "Delete successful"
+
+
+    if @assigned != nil 
+      @assigned.destroy
+      flash[:success] = "Delete successful"
+    else
+      flash[:danger]  = "Error! Still processing your previous request"
+    end
 		redirect_to viewassign_path
 	end
 

@@ -357,20 +357,21 @@ class ProjectsController < ApplicationController
         end
 
         def destroy
-
-                print("\n\nHello\n\n")
-
                 Project.find(params[:id]).destroy
+
+                
                 x = Own.find_by_project_id(params[:id])
-
-
                 if(!x.nil?)
                         x.destroy
                 end
-                print(x.inspect)
+        
                 
-                
-                flash[:success] = "Project deleted"
+                assigned = Assignment.find_by_project_id(params[:id])
+                if !assigned.nil?   #Delete this project's assignment if any
+                        assigned.destroy
+                end
+    
+    		flash[:success] = "Project deleted"
 
                 if(current_user.admin?)
                 redirect_to projects_url
@@ -378,6 +379,10 @@ class ProjectsController < ApplicationController
                 else
                 redirect_to myproposals_projects_url(current_user)
                 end 
+
+
+
+
         end
 
 

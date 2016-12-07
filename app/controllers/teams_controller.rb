@@ -91,6 +91,9 @@ class TeamsController < ApplicationController
 	def remove
 		@relationship = Relationship.find_by_user_id(params[:user_id])
 		@relationship.destroy
+
+    
+
 		flash[:success] = "Remove successful"
 		redirect_to teams_path
 	end

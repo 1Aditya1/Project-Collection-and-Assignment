@@ -1,17 +1,40 @@
 # Create an admin account
+#user = User.find_or_initialize_by(email: 'admin@example.com')
+#user.name = 'administrator'
+#user.uin = Faker::Number.number(9)
+#user.email = "admin@example.com"
+#user.password = 'adminadmin'
+#user.admin = true
+#user.semester = 'Fall'
+#user.year =  2016.to_s #Faker::Number.between(2000 ,2026).to_s
+#user.course = 'CSCE606'
+#user.save!
+
+
 user = User.find_or_initialize_by(email: 'admin@example.com')
 user.name = 'administrator'
 user.uin = Faker::Number.number(9)
-user.email = "admin@example.com"
+user.email = "master@example.com"
 user.password = 'adminadmin'
 user.admin = true
-user.semester = 'Fall'
-user.year =  2016.to_s #Faker::Number.between(2000 ,2026).to_s
+user.semester = 'Spring'
+user.year =  2015.to_s #Faker::Number.between(2000 ,2026).to_s
 user.course = 'CSCE606'
 user.save!
 
- 99.times do |n|
-   name  = Faker::Name.name
+
+ 100.times do |n|
+   offset = rand(0..2)
+   name = nil
+   if(offset == 0) 
+     name = Faker::StarWars.character
+   elsif(offset==1)
+     name = Faker::Superhero.name
+   else
+     name = Faker::Name.name
+   end
+     
+
    uin   = Faker::Number.number(9)
    email = "example-#{n+1}@railstutorial.org"
    password = "password"
@@ -28,7 +51,9 @@ user.save!
                  password_confirmation: password)
  end
 
- 30.times do |n|
+
+#Adding non-legacy projects
+ 10.times do |n|
    title  = Faker::Company.catch_phrase
    organization = Faker::Company.name
    contact = Faker::Name.name + "  " + Faker::PhoneNumber.cell_phone
@@ -50,30 +75,9 @@ user.save!
  end
 
 
- 25.times do |n|
-   title  = Faker::Company.catch_phrase
-   organization = Faker::Company.name
-   contact = Faker::Name.name + "  " + Faker::PhoneNumber.cell_phone
-   description = Faker::Lorem.paragraph
-   oncampus = n%3 == 0 ? false : true
-   islegacy = n%4 == 0 ? false : true
-   approved = true
-   semester = n%3 == 0 ? 'Fall' : 'Spring'
-   year =  rand(2000..2026).to_s
-   Project.create!(title:  title,
-                  organization: organization,
-                   contact: contact,
-                  description: description,
-                   oncampus: oncampus,
-                   islegacy: islegacy,
-                   approved: approved,
-                   semester: semester,
-                   year: year)
- end
 
 
-
- 50.times do |n|
+ 10.times do |n|
    title  = Faker::Company.catch_phrase
    organization = Faker::Company.name
    contact = Faker::Name.name + "  " + Faker::PhoneNumber.cell_phone
@@ -81,7 +85,34 @@ user.save!
    oncampus = n%3 == 0 ? false : true
    islegacy = true
    approved = n%2==0 ? false : true
-   legacy_id = rand(0..55)
+   legacy_id = rand(0..10)
+   semester = n%3 == 0 ? 'Fall' : 'Spring'
+   year =  rand(2015..2017).to_s
+   Project.create!(title:  title,
+                   organization: organization,
+                   contact: contact,
+                   description: description,
+                   oncampus: oncampus,
+                   islegacy: islegacy,
+                   legacy_id: legacy_id,
+                   approved: approved,
+                   semester: semester,
+                   year: year)
+ end
+
+
+
+ 10.times do |n|
+   title  = Faker::Company.catch_phrase
+   organization = Faker::Company.name
+   contact = Faker::Name.name + "  " + Faker::PhoneNumber.cell_phone
+   description = Faker::Lorem.paragraph
+   oncampus = n%3 == 0 ? false : true
+   islegacy = true
+   approved =  true
+   legacy_id = rand(10..20)
+
+   
    semester = n%3 == 0 ? 'Fall' : 'Spring'
    year =  rand(2015..2017).to_s
    Project.create!(title:  title,
@@ -99,49 +130,26 @@ user.save!
 
 
 
+ available_users = User.where(:admin => false).collect{|x| x.id}
 
- users = User.all
-
- 20.times do |n|
-   name = Faker::Internet.domain_word
-   user_id = users[n].id
-   code = Faker::Number.number(4)
-   t = Team.create!(name: name, user_id: user_id, code: code)
-   Relationship.create!(user_id: user_id, team_id: t.id)
- end
-'''
- teams=Team.all
- proj=Project.where("approved = ?", false)
- 3.times do |n|
-   preassign = Preassignment.new do |p|
-     p.team_id = teams[n+1].id
-     p.project_id = proj[n+1].id
+teams = Hash.new
+ 12.times do |n|
+   team_name = nil
+   while true do
+    team_name = Faker::Team.state.capitalize
+    if !teams.key?(team_name)
+      teams[team_name] = true
+      break
+    end
    end
-   preassign.save
- end
+   creator_id  = available_users.shuffle!.pop
+   code = Faker::Number.number(4)
+   
+   t = Team.create!(name: team_name, user_id: creator_id, code: code)
+   Relationship.create!(user_id: creator_id, team_id: t.id)
 
- preassign = Preassignment.all
- preassign.each do |p|
-   preteam = Team.find_by(id: p.team_id)
-   teams -= [preteam]
+   rand(3..5).times do |x|
+     member_id = available_users.shuffle!.pop
+        Relationship.create!(user_id: member_id , team_id: t.id)
+   end
  end
-'''
-# teams = Team.all
-# projects = Project.where("approved = ?", true)
-# rnd = Random.new(Time.now.to_i)
-
-# teams.each do |t|
-#   projects.each do |proj|
-#     v = rnd.rand(-10..10)
-#     if v > 9
-#       v = 1
-#     elsif v < 0
-#       v = -1
-#     else
-#       v = 0
-#     end
-#     Preference.create!(team_id: t.id,
-#                         project_id: proj.id,
-#                         value: v)
-#   end
-# end

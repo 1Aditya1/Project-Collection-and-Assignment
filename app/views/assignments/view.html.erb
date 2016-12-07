@@ -3,6 +3,11 @@
 <div class="row">
 <div class="col-md-10 col-md-offset-1">
 
+  <%= button_to "Clear All Assignments",  clear_all_data_path(),
+                                  data: { confirm: "Are you sure you want to reset all assignments?" }, :class => "btn btn-danger" %>
+    
+
+	<br><br>
 	<table>
 	<tr>
 		<div class="col-md-6">
@@ -43,6 +48,7 @@
 	  			<% end %>
 	  		</td>
 			<td>
+
 				<%= button_to "Delete Assignment", {action: "delete", team_id: @assignments[i][:team_id], project_id: @assignments[i][:project_id]} %>
 			</td>
 	  	</tr>
@@ -58,6 +64,10 @@
 <%= form_tag({action: :add}) do %>
 	<%= select_tag(:project_title, options_for_select(@project_names)) %>
 	<%= select_tag(:team_name, options_for_select(@team_names)) %>
-	<%=	submit_tag("Add Assignment") %>
+<%=	submit_tag("Add Assignment") %>
+
+
+
+
 <% end %>
 
