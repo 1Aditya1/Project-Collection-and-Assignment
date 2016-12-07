@@ -4,8 +4,9 @@ class ProjectsController < ApplicationController
         skip_before_filter :admin_user, only: [:destroy , :edit, :update]
         
         def index
-                @title = "All Projects"
+                @title = "all_projects"
                 @sorting = params[:sort]
+                @path = "projects_path"
                 if @sorting == 'year'
                         @projects = Project.order("year DESC,semester DESC").all.paginate(page: params[:page])
                 else
@@ -14,14 +15,26 @@ class ProjectsController < ApplicationController
         end
 
         def approved
-                @title = "Approved Projects"
-                @projects = Project.where("approved = ?", true).paginate(page: params[:page])
+                @title = "approved_projects"
+                @path = "approved_projects_path"
+                @sorting = params[:sort] 
+                if @sorting == 'year'
+                        @projects = Project.order("year DESC,semester DESC").where("approved = ?", true).paginate(page: params[:page])
+                else
+                        @projects = Project.order(@sorting).where("approved = ?", true).paginate(page: params[:page])
+                end
                 render 'index'
         end
 
         def unapproved
-                @title = "Unapproved Projects"
-                @projects = Project.where("approved = ?", false).paginate(page: params[:page])
+                @title = "unapproved_projects"
+                @path = "unapproved_projects_path"
+                @sorting = params[:sort]
+                if @sorting == 'year'
+                        @projects = Project.order("year DESC,semester DESC").where("approved = ?", false).paginate(page: params[:page])
+                else
+                        @projects = Project.order(@sorting).where("approved = ?", false).paginate(page: params[:page])
+                end
                 render 'index'
         end
 
