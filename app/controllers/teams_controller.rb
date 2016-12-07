@@ -89,12 +89,22 @@ class TeamsController < ApplicationController
   end
 
 	def remove
-		@relationship = Relationship.find_by_user_id(params[:user_id])
-		@relationship.destroy
 
-    
+    print("\n\n")
+    print(params)
+    print("\nLeader : ")
+    print(Team.find(params[:team_id]).leader.inspect)
+    print("\n\n")
 
-		flash[:success] = "Remove successful"
+    if current_user.admin? && params[:user_id]==Team.find(params[:team_id]).leader.id.to_s()
+      flash[:danger]  = "Error . . .  You cannot remove the team leader!"
+
+    else
+      @relationship = Relationship.find_by_user_id(params[:user_id])
+      @relationship.destroy
+      flash[:success] = "Remove successful"
+    end
+
 		redirect_to teams_path
 	end
 
@@ -110,9 +120,9 @@ class TeamsController < ApplicationController
 			
 
     print(Relationship.where(team_id:params[:team_id]).count)
-    print("Freee")
 
-    elsif (Relationship.where(team_id:params[:team_id]).count) >= 6
+
+    elsif !current_user.admin? && (Relationship.where(team_id:params[:team_id]).count) >= 6
           flash[:danger]  = "Sorry, this team has already reached the capacity of 6 members. "
           redirect_to teams_path
     
@@ -122,7 +132,7 @@ class TeamsController < ApplicationController
 		relationship.team_id = params[:team_id].to_s
 		relationship.user_id = User.find_by_name(params[:user_name].to_s).id
 		relationship.save
-		flash[:success] = "Successfully add user "+ params[:user_name].to_s+" to team"
+		flash[:success] = "Successfully added user "+ params[:user_name].to_s+" to team"
 		redirect_to teams_path
     end
 	end
@@ -138,9 +148,14 @@ class TeamsController < ApplicationController
   	  @team = Team.new(team_params)
   	  @team.user_id = current_user.id
   	  @team.code = ('a'..'z').to_a.shuffle.take(4).join()
+
       if @team.save
-        current_user.join_team(@team)
-		#Dir.mkdir './public/uploads/'+@team.id.to_s
+
+        if !current_user.admin?
+          current_user.join_team(@team)
+        end
+        
+        
         flash[:success] = "Team created Successfully"
         redirect_to @team
       else
