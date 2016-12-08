@@ -33,7 +33,11 @@
 <td><%=link_to doc.link, "http://#{doc.link}"  %>
 <% end %>
 
+<% if !auser[0].nil?%>
 <td><%= link_to auser[1], user_path(auser[0])  %></td>
+<% else %>
+<td><%= auser[1] %></td>
+<% end %>
 
 <% if @auth %>
 <td><%= link_to "Delete", documents_destroy_path(:id => doc.id, :project_id => doc.project_id)%>

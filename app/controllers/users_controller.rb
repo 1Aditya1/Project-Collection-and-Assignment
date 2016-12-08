@@ -157,9 +157,17 @@ class UsersController < ApplicationController
 	end
 
   def destroy
-    User.find(params[:id]).destroy 
-    flash[:success] = "User Deleted Permanently!"
-    redirect_to users_url
+
+		team = Team.find_by_user_id(params[:id])
+
+		if(team.nil?)
+				User.find(params[:id]).destroy 
+				flash[:success] = "User Deleted Permanently!"
+
+		else	
+				flash[:warning] = "This user is a team leader! You need to delete his team first"
+		end
+				redirect_to users_url
   end
 
   private

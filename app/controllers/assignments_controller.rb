@@ -28,11 +28,29 @@ class AssignmentsController < ApplicationController
   end
   
   def assign
-    teams = Team.all
-    projects = Project.where("approved = ?", true)
+
+    #Modify this to only pick teams and projects that do not have assignemnts yet
+
+      reserved_teams =  Assignment.all.collect{|x| x.team_id}
+      reserved_projects = Assignment.all.collect{|x| x.project_id}
+
+      print(reserved_teams, reserved_projects)
+
+     teams = Team.where.not(id: reserved_teams)
+     #projects = Project.where("approved = ? AND id NOT IN (?)", true, reserved_projects)
+
+     projects = Project.where.not(id:  reserved_projects).where(approved: true)
+    print(teams.inspect)
+
+
+    print(projects.inspect)
+
+
+     #teams = Team.all
+    #projects = Project.where("approved = ?", true)
     
     if teams.size > projects.size
-      flash[:danger] = "Cannot proceed with Assignment Algorithm, Number of Teams more than number of Approved Projects"
+      flash[:danger] = "Cannot proceed with Assignment Algorithm, Number of Unassigned Teams more than number of Approved and available Projects"
       redirect_to viewassign_path
       return
     end
@@ -71,7 +89,7 @@ class AssignmentsController < ApplicationController
     numPos = 0
     numNeu = 0
     numNeg = 0
-    Assignment.delete_all
+   # Assignment.delete_all
     for i in 0..(pairings.size - 1)
       pair = pairings[i]
       if (pair[0] < teams.size)
@@ -119,7 +137,6 @@ class AssignmentsController < ApplicationController
 
 	def delete
 		@assigned = Assignment.find_by_project_id(params[:project_id])
-
 
     if @assigned != nil 
       @assigned.destroy

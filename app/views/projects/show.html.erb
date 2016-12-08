@@ -15,6 +15,12 @@
   	<th>Title</th>
   	<td><%= @project.title %></td>
   </tr>
+   <tr>
+   <% if @owned %>
+  	<th>Proposed By</th>
+  	<td><%= @owner.name %></td>
+  <% end %>
+  </tr>
     <tr>
   	<th>Semester</th>
   	<td><%= @project.semester + " "  + @project.year %> </td>

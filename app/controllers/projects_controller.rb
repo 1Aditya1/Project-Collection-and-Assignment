@@ -305,13 +305,18 @@ class ProjectsController < ApplicationController
                 end
                 end
                 
-                owned = Own.find_by_project_id(params[:id])
+                @owned = Own.find_by_project_id(params[:id])
 
-                if !current_user.admin?  && !@project.approved? || (owned!=nil && owned.user_id != current_user.id)
-                       
-                         flash[:danger] = "You do not have priviledge to view this project"
-                          redirect_to approved_projects_url
+                if !@owned.nil?
+                        @owner = User.find_by_id(@owned.user_id)
+
                 end
+
+                #if !current_user.admin?  && (!@project.approved? || (@owned!=nil && @owned.user_id != current_user.id))
+                 #      
+                 #        flash[:danger] = "You do not have priviledge to view this project"
+                  #        redirect_to approved_projects_url
+                #end
         end
         
 
@@ -405,15 +410,28 @@ class ProjectsController < ApplicationController
         def documentation
 		@project = Project.find(params[:project_id])
                 @documents = Document.where(:project_id => params[:project_id])
+
                 @users = []
                 @documents.each do |x|
-                auser = User.find(x.author);
-                @users<<([auser.id, auser.name])
+
+                @documents.inspect
+                
+                auser = User.find_by_id(x.author)
+
+
+                        
+                        if auser.nil? #For some reason this user has been deleted
+                                @users << [nil, "Deleted User"] #Inform front end that this user no longer exists    
+                        else
+                                @users<<([auser.id, auser.name])
+                        end
                 end
                 
 
                 @team = Team.find(Assignment.find_by_project_id(@project.id).team_id)
 	     	@member_ids = Relationship.where(team_id: @team.id, user_id: current_user).all
+
+                #If current user is a member of this team
                 @auth = (@member_ids.empty?)?false:true
         end
 

@@ -1,14 +1,14 @@
 # Create an admin account
-#user = User.find_or_initialize_by(email: 'admin@example.com')
-#user.name = 'administrator'
-#user.uin = Faker::Number.number(9)
-#user.email = "admin@example.com"
-#user.password = 'adminadmin'
-#user.admin = true
-#user.semester = 'Fall'
-#user.year =  2016.to_s #Faker::Number.between(2000 ,2026).to_s
-#user.course = 'CSCE606'
-#user.save!
+user = User.find_or_initialize_by(email: 'admin@example.com')
+user.name = 'administrator'
+user.uin = Faker::Number.number(9)
+user.email = "admin@example.com"
+user.password = 'adminadmin'
+user.admin = true
+user.semester = 'Fall'
+user.year =  2016.to_s #Faker::Number.between(2000 ,2026).to_s
+user.course = 'CSCE606'
+user.save!
 
 
 user = User.find_or_initialize_by(email: 'admin@example.com')
