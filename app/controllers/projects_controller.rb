@@ -313,7 +313,8 @@ class ProjectsController < ApplicationController
 
                 end
 
-
+                @legacy_project = Project.find_by_id(@project.legacy_id)
+                
                 #if !current_user.admin?  && (!@project.approved? || (@owned!=nil && @owned.user_id != current_user.id))
                 if !logged_in?       
                          flash[:danger] = "You do not have priviledge to view this project"

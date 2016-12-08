@@ -52,8 +52,8 @@
   	<th>Is Legacy</th>
   	<td><%= @project.islegacy? ? 'Yes':'No' %> 
     
-    <% if @project.islegacy && @project.legacy_id!=nil %>
-    <%= link_to "(Link to Legacy Project)", project_path(@project.legacy_id)%> </td>
+    <% if @project.islegacy && @legacy_project!=nil %>
+    (<%= link_to @legacy_project.title, project_path(@project.legacy_id)%> )</td>
     <% end %>
   </tr>
 
