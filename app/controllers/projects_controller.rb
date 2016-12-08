@@ -315,7 +315,7 @@ class ProjectsController < ApplicationController
 
 
                 #if !current_user.admin?  && (!@project.approved? || (@owned!=nil && @owned.user_id != current_user.id))
-                if current_user.logged_in?       
+                if !logged_in?       
                          flash[:danger] = "You do not have priviledge to view this project"
                           redirect_to approved_projects_url
                 end
