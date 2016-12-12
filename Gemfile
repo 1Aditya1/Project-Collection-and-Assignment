@@ -26,20 +26,21 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
-
+  
 end
 
-#group :test do
-#  gem 'rspec-rails'
-#  gem 'shoulda-matchers', :require=> false
-#  gem 'minitest-reporters', '1.0.5'
-#  gem 'mini_backtrace',     '0.1.3'
-#  gem 'guard-minitest',     '2.3.1'
-#  gem 'cucumber-rails', :require => false
-#  gem 'database_cleaner'
-#  gem 'simplecov', :require => false, :group => :test
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', :require=> false
+  gem 'minitest-reporters', '1.0.5'
+  gem 'mini_backtrace',     '0.1.3'
+  gem 'guard-minitest',     '2.3.1'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'simplecov', :require => false, :group => :test
+  #gem "launchy", ">= 2.0.5", :group => :test
 
-#end
+end
 
 group :production do
   gem 'pg',             '0.17.1'
