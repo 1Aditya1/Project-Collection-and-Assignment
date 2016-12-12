@@ -328,15 +328,11 @@ class ProjectsController < ApplicationController
                 @opt = Project.all.order("title")
                 @options   =  @opt.collect{|p| [p.title, p.id]}
 
-                print(@options.inspect)
         end
 
        
 
         def create
-
-                print("\n\nCREATE\n\n")
-                print(project_params)
 
                 @project = Project.new(project_params)
 
@@ -430,9 +426,13 @@ class ProjectsController < ApplicationController
                         end
                 end
                 
+                active_assignment  = Assignment.find_by_project_id(@project.id)
 
-                @team = Team.find(Assignment.find_by_project_id(@project.id).team_id)
-	     	@member_ids = Relationship.where(team_id: @team.id, user_id: current_user).all
+                team = active_assignment.nil? ? nil : Team.find(active_assignment.team_id)
+                
+                team_id = (team.nil?) ? nil  : team.id
+
+	     	@member_ids = Relationship.where(team_id: team_id, user_id: current_user).all
 
                 #If current user is a member of this team
                 @auth = (@member_ids.empty?)?false:true

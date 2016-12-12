@@ -40,15 +40,7 @@ class AssignmentsController < ApplicationController
      #projects = Project.where("approved = ? AND id NOT IN (?)", true, reserved_projects)
 
      projects = Project.where.not(id:  reserved_projects).where(approved: true)
-    print(teams.inspect)
 
-
-    print(projects.inspect)
-
-
-     #teams = Team.all
-    #projects = Project.where("approved = ?", true)
-    
     if teams.size > projects.size
       flash[:danger] = "Cannot proceed with Assignment Algorithm, Number of Unassigned Teams more than number of Approved and available Projects"
       redirect_to viewassign_path
